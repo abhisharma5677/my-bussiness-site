@@ -1,0 +1,106 @@
+.homePageContact_class {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 100px;
+  height: 120px;
+  width: 1500px;
+  margin-bottom: 50px;
+}
+
+.homePageContact_class p {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.image_home {
+  border: 15px solid rgb(184, 11, 98);
+  padding: 10px;
+  border-radius: 40px;
+  width: 500px;
+  height: 400px;
+  margin-top: 25px;
+}
+
+.image_home:hover {
+  padding: 0;
+  transition-delay: 10ms;
+  transition-duration: 400ms;
+}
+
+.homeImagesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-top: 50px;
+}
+
+.message-container {
+  position: relative;
+  width: 300px;
+  /* Adjust the width to fit your messages */
+  height: 100px;
+  /* Adjust the height to fit your messages */
+  overflow: hidden;
+}
+
+.message {
+  /* position: absolute;
+  top: 400px;
+  left: 600px; */
+  opacity: 0;
+  width: auto;
+  height: 10px;
+  display: flex;
+  padding: 5px;
+  font-weight:900;
+  align-items: center;
+  justify-content: center;
+  font-size:xx-large;
+  color: black;
+  animation: messageAnimation 40s infinite;
+}
+
+.message:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.message:nth-child(2) {
+  animation-delay: 10s;
+}
+
+.message:nth-child(3) {
+  animation-delay: 20s;
+}
+
+.message:nth-child(4) {
+  animation-delay: 30s;
+}
+
+.message:nth-child(5) {
+  animation-delay: 40s;
+}
+
+@keyframes messageAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

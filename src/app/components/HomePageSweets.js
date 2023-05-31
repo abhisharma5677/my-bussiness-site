@@ -17,13 +17,13 @@ const HomePageSweets = () => {
         <div className={style.homeImagesContainer}>
           {sweets.map((item, i) => {
             return (
-              <HomeSweetCard img={sweets[i].Img6} />
+              <HomeSweetCard key={i} img={sweets[i].Img6} />
             )
           })}
 
           {sweets.map((item, i) => {
             return (
-              <HomeSweetCard img={sweets[i].Img7} />
+              <HomeSweetCard key ={i} img={sweets[i].Img7} />
             )
           })}
         </div>

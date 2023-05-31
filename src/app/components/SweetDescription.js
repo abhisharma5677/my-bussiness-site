@@ -11,7 +11,7 @@ const SweetDescription = () => {
       <div className={style.sweetCard_flex}>
         {sweets.map((item , i ) => {
           return(
-          <SweetCard 
+          <SweetCard  key={i}
           img1={sweets[i].Img1} 
           img2={sweets[i].Img2} 
           img3={sweets[i].Img3} 

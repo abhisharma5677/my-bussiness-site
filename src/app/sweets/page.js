@@ -1,4 +1,3 @@
-import React from 'react'
 import SweetDescription from '../components/SweetDescription'
 
 const page = () => {

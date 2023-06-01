@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className={style.footer_container}>
             <FooterMsg />
-            <div style={{display:"grid" , gridTemplateColumns:"repeat(2, 1fr)" , columnGap:"120px" }}>
+            <div className={style.linkIcon_class}>
                 <FooterLink />
                 <FooterContact />
             </div>

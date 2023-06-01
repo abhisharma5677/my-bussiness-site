@@ -22,7 +22,7 @@
 
 .phone_class {
     border: 1px solid rgb(220, 82, 82);
-    min-width: 300px;
+    width: 300px;
     background-color: rgb(220, 82, 82);
     text-align: center;
     line-height: 7px;
@@ -31,7 +31,7 @@
 
 .facebook_class {
     border: 1px solid rgb(220, 82, 82);
-    min-width: 300px;
+    width: 300px;
     background-color: rgb(220, 82, 82);
     text-align: center;
     line-height: 3px;
@@ -40,7 +40,7 @@
 
 .instagram_class {
     border: 1px solid rgb(220, 82, 82);
-    min-width: 300px;
+    width: 300px;
     background-color: rgb(220, 82, 82);
     text-align: center;
     line-height: 3px;
@@ -55,6 +55,10 @@
 
 .map_class h1 {
     text-decoration: underline;
+}
+
+.map{
+    border: 0px solid white;
 }
 
 
@@ -116,4 +120,122 @@
     font-size: xx-large;
     line-height: 40px;
     padding-top: 80px;
+}
+
+
+@media (max-width:700px){
+
+    .contactUs_msg {
+        border: 1px solid rgb(33, 207, 120);
+        background-color: rgb(33, 207, 120);
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+    .card_container {
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        margin-top: 30px;
+        border: 1px solid hotpink;
+        background-color: hotpink;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 30px;
+    }
+
+    .phone_class {
+        border: 1px solid rgb(220, 82, 82);
+        width: 100%;
+        background-color: rgb(220, 82, 82);
+        text-align: center;
+        line-height:10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .facebook_class {
+        border: 1px solid rgb(220, 82, 82);
+        width: 100%;
+        background-color: rgb(220, 82, 82);
+        text-align: center;
+        line-height: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .instagram_class {
+        border: 1px solid rgb(220, 82, 82);
+        width: 100%;
+        background-color: rgb(220, 82, 82);
+        text-align: center;
+        line-height: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .map_class {
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .map_class h1{
+        margin: 20px;
+    }
+
+    .map{
+        padding: 20px;
+        width: 90%;
+        height: 500px;
+    }
+
+    .form_description{
+        font-size:large;
+        line-height: 10px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .bigFormContainer{
+        display: flex;
+        flex-direction: column;
+        border: 5px solid hotpink;
+        margin-top: 100px;
+        padding-left: 0px;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: hotpink;
+    }
+
+    .form_input {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .form_textarea {
+        width: 90%;
+        height: 150px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .form_container{
+        margin-top: 50px;
+    }
+
+    .form_flex{
+        display: flex;
+        justify-content: center;
+    }
+    
 }

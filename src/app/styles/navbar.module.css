@@ -28,14 +28,14 @@
     margin-right: 40px;
 }
 
-.link_class{
+.link_class {
     text-decoration: none;
     color: whitesmoke;
     font-weight: bolder;
     font-style: normal;
 }
 
-.link_class:hover{
+.link_class:hover {
     color: yellow;
 }
 
@@ -44,11 +44,25 @@
     display: flex;
     border: 1px solid #19181800;
     background-color: rgb(81, 29, 29);
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
-.navbar_class{
+.navbar_class {
     display: flex;
     color: black;
+}
+
+
+@media(max-width:700px) {
+
+    .header_class {
+        display: none;
+    }
+
 }

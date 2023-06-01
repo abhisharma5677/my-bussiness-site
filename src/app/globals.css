@@ -1,22 +1,16 @@
-body{
+body {
   background-color: rgb(188, 180, 180);
   margin: 0px;
   padding: 0px;
 }
 
-/* .Sweets{
-  margin: 50px;
+@media (max-width: 700px) {
+  /* CSS rules for screens with a maximum width of 700px */
+
+  body {
+    background-color: red;
+    /* Example: Change background color to red */
+  }
+
+  /* Add any other styles specific to screens with a maximum width of 700px */
 }
-
-.Sweets img{
-  margin: 25px;
-}
-
-.Sweets img:hover{
-  transition-delay: 100ms;
-  transition-duration: 2s;
-  height: 600px;
-  width: 600px;
-} */
-
-

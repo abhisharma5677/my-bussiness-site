@@ -95,7 +95,9 @@ const ContactForm = () => {
             </textarea>
           </div>
 
-          <button className={style.form_submit} type="submit">Submit</button>
+          <div className={style.form_flex}>
+            <button className={style.form_submit} type="submit">Submit</button>
+          </div>
         </form>
       </div>
 

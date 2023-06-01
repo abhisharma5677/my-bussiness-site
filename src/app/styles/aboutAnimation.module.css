@@ -58,3 +58,32 @@
         opacity: 1;
     }
 }
+
+
+@media (max-width:700px){
+
+    .pre_container{
+        border: 1px solid darkslategray;
+        background-color: darkslategray;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        align-self: center;
+        padding-top: 5px;
+    }
+
+    .serving_msg{
+        font-size: large;
+        padding-top: 10px;
+    }
+
+    .message_container {
+        width: 300px;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+        padding-top: 10px;
+        color: white;
+    }
+}

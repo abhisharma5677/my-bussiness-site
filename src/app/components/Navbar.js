@@ -18,7 +18,7 @@ const Navbar = () => {
                 </li>
                 <li className={styles.list_class}>
                     <Link href="/fromOwnersDesk" className={styles.link_class}>
-                        OWNER'S MESSAGE
+                        OWNERS MESSAGE
                     </Link>
                 </li>
                 <li className={styles.list_class}>

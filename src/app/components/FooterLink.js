@@ -19,7 +19,7 @@ const FooterLink = () => {
                 </li>
                 <li>
                     <Link href="/fromOwnersDesk" className={style.listItem_class}>
-                        OWNER'S MESSAGE
+                        OWNERS MESSAGE
                     </Link>
                 </li>
                 <li>

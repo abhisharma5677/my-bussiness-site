@@ -60,7 +60,8 @@
   justify-content: center;
   font-size:xx-large;
   color: black;
-  animation: messageAnimation 40s infinite;
+  font-style: italic;
+  animation: messageAnimation 50s infinite;
 }
 
 .message:nth-child(1) {
@@ -110,15 +111,15 @@
 @media(max-width:700px){
 
   .homePageContact_class {
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
+    border: 1px solid hotpink;
+    background-color: hotpink;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 10px;
     height: auto;
     width: 90%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-top: 20px;
   }
 

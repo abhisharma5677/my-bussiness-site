@@ -20,12 +20,6 @@ const HomePageSweets = () => {
               <HomeSweetCard key={i} img={sweets[i].Img6} />
             )
           })}
-
-          {sweets.map((item, i) => {
-            return (
-              <HomeSweetCard key ={i} img={sweets[i].Img7} />
-            )
-          })}
         </div>
       </div>
 

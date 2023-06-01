@@ -50,10 +50,16 @@
     }
 
     .linkIcon_class {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 80px;
-        margin-left: 7%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        column-gap: auto;
+    }
+
+    .listItem_class{
+        font-size: 13px;
+        font-weight: bolder;
     }
 
     .quickLink_class {

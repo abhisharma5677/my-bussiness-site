@@ -18,8 +18,18 @@ const FooterLink = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link href="/fromOwnersDesk" className={style.listItem_class}>
+                        OWNER'S MESSAGE
+                    </Link>
+                </li>
+                <li>
                     <Link href="/sweets" className={style.listItem_class}>
                         SWEETS
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/qualityAssurance" className={style.listItem_class}>
+                        QUALITY ASSURANCE
                     </Link>
                 </li>
                 <li>
@@ -28,7 +38,7 @@ const FooterLink = () => {
                     </Link>
                 </li>
                 <li className={style.listItem_class}>
-                    <Link href="https://g.co/kgs/fBNnuC" className={style.listItem_class}>
+                    <Link href="https://pandit-misthan-bhandar.business.site/" className={style.listItem_class}>
                         REVIEWS AND RATINGS
                     </Link>
                 </li>

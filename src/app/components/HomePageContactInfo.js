@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { GiRotaryPhone } from "react-icons/gi";
+import { BsFacebook } from "react-icons/bs";
 import style from "@/app/styles/homePage.module.css"
 
 
@@ -14,6 +15,7 @@ const HomePageContactInfo = () => {
         <p><u>Email :-</u> <Link href="mailto:imabhishek5677@gmail.com" className={style.homeIcon_class}><MdEmail size={50} /></Link></p>
         <p><u>Phone :-</u> <Link href="tel:8384895512" className={style.homeIcon_class}> <GiRotaryPhone size={50} /> </Link> </p>
         <p><u>WhatsApp :-</u> <Link href="https://wa.me/918384895512" className={style.homeIcon_class}><FaWhatsappSquare size={50} /></Link> </p>
+        <p><u>Facebook :-</u> <Link href="https://www.facebook.com/panditjimithaiwale/" className={style.homeIcon_class}><BsFacebook size={50} /></Link> </p>
       </div>
     </div>
   )

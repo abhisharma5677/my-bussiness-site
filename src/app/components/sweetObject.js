@@ -10,7 +10,7 @@ const sweets = [
         Img7:"/PEDE/pede_7.jpg",
         name: "PEDE",
         meaning:
-            "“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
+            " Pera is a mithai from the Indian subcontinent. It originated from Mathura, Uttar Pradesh, India. Usually prepared in thick, semi-soft, its main ingredients are khoa, sugar and traditional flavorings including cardamom seeds, pistachio nuts and saffron. "
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const sweets = [
         Img7: "/MILK_CAKE/MC_7.png",
         name: "MILK CAKE",
         meaning:
-            "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you."
+            "Indian Milk Cake is a traditional Indian milk fudge prepared with full cream milk, sugar, ghee, and a coagulant!"
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ const sweets = [
         Img7: "/KATLI/katli_7.jpg",
         name: "KATLI",
         meaning:
-            "This is funny! A smiley face, rolling on the floor, laughing. The face is laughing boundlessly. The emoji version of “rofl“. Stands for „rolling on the floor, laughing“."
+            "Katli is a delicious traditional North Indian sweet made with milk, sugar and cardamom powder. Here Katli means the “Thin slices”."
     },
     {
         id: 4,
@@ -48,7 +48,7 @@ const sweets = [
         Img6: "/BARFI/barfi_6.png",
         Img7: "/BARFI/barfi_7.png",
         name:"BARFI",
-        meaning:"May convey a sense of frustration or annoyance more intense than suggested by Neutral Face, as if taking a moment to collect itself"
+        meaning:"Burfi is a popular Indian milk based sweet recipe that is prepared during festivals like Diwali or Deepavali, Holi, Rakhi and any special occasions like birthdays and weddings"
     },
     {
         id: 5,
@@ -60,7 +60,7 @@ const sweets = [
         Img6: "/LADDOO/laddoo_6.jpg",
         Img7: "/LADDOO/laddoo_7.jpg",
         name:"LADDOO",
-        meaning:"May convey a sense of frustration or annoyance more intense than suggested by Neutral Face, as if taking a moment to collect itself"
+        meaning:"Laddu or laddoo is a spherical sweet from the Indian subcontinent made of various ingredients and sugar syrup or jaggery. It has been described as perhaps the most universal and ancient of Indian sweets."
     },
     {
         id: 6,
@@ -72,7 +72,7 @@ const sweets = [
         Img6: "/GAJAR_KA_HALWA/gajar_6.jpg",
         Img7: "/GAJAR_KA_HALWA/gajar_7.jpg",
         name:"GAJAR KA HALWA",
-        meaning:"May convey a sense of frustration or annoyance more intense than suggested by Neutral Face, as if taking a moment to collect itself"
+        meaning:"Gajar ka halwa, also known as gajorer halua, gajrela, gajar pak, and carrot halwa is a carrot-based sweet dessert pudding made by placing grated carrots in a pot."
     },
     {
         id: 7,
@@ -80,10 +80,10 @@ const sweets = [
         Img2: "/SOAN_PAPDI/soanPapdi_2.jpg",
         Img3: "/SOAN_PAPDI/soanPapdi_3.png",
         Img4: "/SOAN_PAPDI/soanPapdi_4.png",
-        Img6: "/MILK_CAKE/MC_8.png",
+        Img6: "/SOAN_PAPDI/soanPapdi_2.jpg",
         Img7: "/MILK_CAKE/MC_5.jpg",
         name:"SOAN PAPDI",
-        meaning:"May convey a sense of frustration or annoyance more intense than suggested by Neutral Face, as if taking a moment to collect itself"
+        meaning:"It is a wonderful Indian dessert that can be easily found in sweet shops across the country. It is specially ordered in festivals like Diwali and Rakshabandhan but sweet lovers like to experience its flaky and powdery flavour on their taste buds throughout the year."
     },
     {
         id: 8,
@@ -91,10 +91,10 @@ const sweets = [
         Img2: "/SOAN_PAPDI/soanPapdi_2.jpg",
         Img3: "/SOAN_PAPDI/soanPapdi_3.png",
         Img4: "/SOAN_PAPDI/soanPapdi_4.png",
-        Img6: "/PEDE/Pede1.jpeg",
+        Img6: "/MEBA_BATI/mebaBati_1.jpg",
         Img7: "/SOAN_PAPDI/soanPapdi_4.png",
         name:"MEBA BATI",
-        meaning:"May convey a sense of frustration or annoyance more intense than suggested by Neutral Face, as if taking a moment to collect itself"
+        meaning:"Mawa bati is a popular dessert from Madhya Pradesh made from reduced milk. It is quite similar to gulab jamun in appearance and taste, the note for this recipe states. "
     }
 ];
 

@@ -17,8 +17,18 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className={styles.list_class}>
+                    <Link href="/fromOwnersDesk" className={styles.link_class}>
+                        OWNER'S MESSAGE
+                    </Link>
+                </li>
+                <li className={styles.list_class}>
                     <Link href="/sweets" className={styles.link_class}>
                         SWEETS
+                    </Link>
+                </li>
+                <li className={styles.list_class}>
+                    <Link href="/qualityAssurance" className={styles.link_class}>
+                        QUALITY ASSURANCE
                     </Link>
                 </li>
                 <li className={styles.list_class}>
@@ -27,7 +37,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className={styles.list_class}>
-                    <Link href="https://g.co/kgs/fBNnuC" className={styles.link_class}>
+                    <Link href="https://pandit-misthan-bhandar.business.site/" className={styles.link_class}>
                         REVIEWS AND RATINGS
                     </Link>
                 </li>

@@ -58,6 +58,10 @@
     color: black;
 }
 
+.phone_nav{
+    display: none;
+}
+
 
 @media(max-width:700px) {
 
@@ -65,4 +69,26 @@
         display: none;
     }
 
+    .phone_nav{
+        border: 1px solid rgb(40, 20, 20);
+        background-color: rgba(40, 20, 20, 0.959);
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .menuBar_class{
+        color: white;
+        padding: 15px;
+    }
+
+    .image_class{
+        padding: 5px;
+    }
+
 }
+

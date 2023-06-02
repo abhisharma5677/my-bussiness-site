@@ -1,51 +1,24 @@
 'use client'
 
 import style from "@/app/styles/contact.module.css"
-import { useState } from "react"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const [user, setUser] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: ""
-  })
-
-
-  function handleChange(e) {
-    const name = e.target.name;
-    const value = e.target.value;
-
-    setUser((previous) => (
-      {
-        ...previous,
-        [name]: value
-      }))
-  }
-
-
-  const handleSubmit = async (e) => {
-
-    try {
-
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { "Content_Type": "application/json" },
-        body: JSON.stringify({
-          name: user.name,
-          email: user.email,
-          phone: user.phone,
-          message: user.message
-        })
-      })
-
-    } catch (e) {
-      console.log(e)
-    }
-  }
-
+    emailjs.sendForm('service_xj0zlhq', 'template_lgquy1k', form.current, 'ndqTDoS1VRHPUARWU')
+      .then((result) => {
+        console.log(result.text);
+        console.log("Message sent succesfully")
+        e.target.reset();
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
   return (
     <div className={style.bigFormContainer}>
@@ -58,45 +31,41 @@ const ContactForm = () => {
 
 
       <div className={style.form_container}>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <div className={style.form_group}>
             <label className={style.form_label} for="name">Name:</label>
-            <input className={style.form_input} type="text" id="name"
-              name="name" placeholder="Enter your name" value={user.name}
-              onChange={handleChange} required
+            <input className={style.form_input} type="text"
+              name="user_name" placeholder="Enter your name" required
               autoComplete="off"
             />
           </div>
 
           <div className={style.form_group}>
-            <label className={style.form_label} for="email">Email:</label>
-            <input className={style.form_input} type="email" id="email"
-              name="email" placeholder="Enter your email" value={user.email}
-              onChange={handleChange} required
+            <label className={style.form_label} for="user_email">Email:</label>
+            <input className={style.form_input} type="email"
+              name="user_email" placeholder="Enter your email" required
               autoComplete="off"
             />
           </div>
 
           <div className={style.form_group}>
-            <label className={style.form_label} for="phone">Phone:</label>
-            <input className={style.form_input} type="number" id="phone"
-              name="phone" placeholder="Enter your phone number" value={user.phone}
-              onChange={handleChange} required
+            <label className={style.form_label} for="user_phone">Phone:</label>
+            <input className={style.form_input} type="number"
+              name="user_phone" placeholder="Enter your phone number" required
               autoComplete="off"
             />
           </div>
 
           <div className={style.form_group}>
             <label className={style.form_label} for="message">Message:</label>
-            <textarea className={style.form_textarea} id="message"
-              name="message" placeholder="Send your message" value={user.message}
-              onChange={handleChange} required
+            <textarea className={style.form_textarea}
+              name="message" placeholder="Send your message" required
               autoComplete="off">
             </textarea>
           </div>
 
           <div className={style.form_flex}>
-            <button className={style.form_submit} type="submit">Submit</button>
+             <input className={style.form_submit} type="submit" value="Send" />
           </div>
         </form>
       </div>

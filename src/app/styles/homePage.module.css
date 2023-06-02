@@ -1,6 +1,6 @@
 .homePageContact_class {
-  border: 1px solid rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
+  border: 2px solid #a9b7b1;
+  background-color: #d6e6cf;
   display: flex;
   justify-content: space-evenly;
   border-radius: 100px;
@@ -15,7 +15,7 @@
 }
 
 .image_home {
-  border: 15px solid rgb(184, 11, 98);
+  border: 0px solid #87489d;
   padding: 10px;
   border-radius: 40px;
   width: 500px;
@@ -111,8 +111,8 @@
 @media(max-width:700px){
 
   .homePageContact_class {
-    border: 1px solid hotpink;
-    background-color: hotpink;
+    border: 1px solid #a9b7b1;
+    background-color: #d6e6cf;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -149,13 +149,13 @@
   }
 
   .image_home {
-    border: 10px solid rgb(184, 11, 98);
+    border: 0px solid #cfa64f;
     padding: 0px;
-    border-radius: 40px;
+    border-radius: 30px;
     width: 80%;
     height: auto;
     align-self: center;
-    margin-left: 7%;
+    margin-left: 10%;
     margin-right: 5%;
   }
   

@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(188, 180, 180);
+  background-color: white;
   margin: 0px;
   padding: 0px;
 }
@@ -13,4 +13,117 @@ body {
   }
 
   /* Add any other styles specific to screens with a maximum width of 700px */
+}
+
+
+.header_class {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.image_class {
+  border: 1px;
+  border-radius: 100px;
+}
+
+.header_class h2 {
+  font-style: italic;
+}
+
+.header_class {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.list_class {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.link_class {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.link_class:hover {
+  color: yellow;
+}
+
+.header_class {
+  margin-top: 0px;
+  display: flex;
+  border: 1px solid #19181800;
+  background-color: #312127;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar_class {
+  display: flex;
+  color: black;
+}
+
+.phone_nav {
+  display: none;
+}
+
+.menuBar_class {
+  display: none;
+}
+
+
+@media(max-width:700px) {
+
+  .header_class {
+    justify-content: space-between;
+  }
+
+  .phone_nav {
+    position: absolute;
+    display: block;
+    list-style:none;
+    background-color: #312127e4;
+    right: 0;
+    top: 60px;
+    transition: all 0.5s ease-out;
+    width: 60%;
+  }
+
+  .menuBar_class {
+    color: white;
+    padding: 15px;
+    display: block;
+  }
+
+  .navbar_class{
+    display: none;
+  }
+
+  .image_class {
+    margin-left: 5px;
+    margin-bottom: 0px;
+  }
+
+  .list_class{
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .link_class{
+    font-weight: bold;
+  }
+
 }

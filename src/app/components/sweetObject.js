@@ -6,7 +6,7 @@ const sweets = [
         Img3:"/PEDE/pede4.jpg",
         Img4:"/PEDE/pede_5.png",
         Img5:"/PEDE/pede_6.jpg",
-        Img6:"/PEDE/pede2.jpg",
+        Img6:"/MILK_CAKE/MC_6.jpg",
         Img7:"/PEDE/pede_7.jpg",
         name: "PEDE",
         meaning:
@@ -19,7 +19,7 @@ const sweets = [
         Img3: "/MILK_CAKE/MC_3.jpg",
         Img4: "/MILK_CAKE/MC_4.png",
         Img5: "/MILK_CAKE/MC_5.jpg",
-        Img6: "/MILK_CAKE/MC_6.jpg",
+        Img6: "/PEDE/pede2.jpg",
         Img7: "/MILK_CAKE/MC_7.png",
         name: "MILK CAKE",
         meaning:

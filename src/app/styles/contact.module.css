@@ -1,6 +1,6 @@
 .contactUs_msg {
-    border: 1px solid rgb(33, 207, 120);
-    background-color: rgb(33, 207, 120);
+    /* border: 1px solid rgb(33, 207, 120);
+    background-color: rgb(33, 207, 120); */
     text-align: center;
     text-decoration: underline;
     padding: 30px;
@@ -13,35 +13,35 @@
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
-    border: 1px solid hotpink;
-    background-color: hotpink;
+    border: 1px solid #ecf8e7;
+    background-color: #d6e6cf;
     padding: 100px;
     margin-left: 100px;
     margin-right: 100px;
 }
 
 .phone_class {
-    border: 1px solid rgb(220, 82, 82);
+    border: 1px solid #cccd74;
     width: 300px;
-    background-color: rgb(220, 82, 82);
+    background-color: #cccd74;
     text-align: center;
     line-height: 7px;
     border-radius: 50px;
 }
 
 .facebook_class {
-    border: 1px solid rgb(220, 82, 82);
+    border: 1px solid #cccd74;
     width: 300px;
-    background-color: rgb(220, 82, 82);
+    background-color: #cccd74;
     text-align: center;
     line-height: 3px;
     border-radius: 50px;
 }
 
 .instagram_class {
-    border: 1px solid rgb(220, 82, 82);
+    border: 1px solid #cccd74;
     width: 300px;
-    background-color: rgb(220, 82, 82);
+    background-color: #cccd74;
     text-align: center;
     line-height: 3px;
     border-radius: 50px;
@@ -107,13 +107,13 @@
 .bigFormContainer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    border: 5px solid hotpink;
+    border: 5px solid #d6e6cf;
     margin-top: 100px;
     padding-left: 300px;
     padding-right: 200px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: hotpink;
+    background-color: #d6e6cf;
 }
 
 .form_description{
@@ -126,8 +126,8 @@
 @media (max-width:700px){
 
     .contactUs_msg {
-        border: 1px solid rgb(33, 207, 120);
-        background-color: rgb(33, 207, 120);
+        /* border: 1px solid rgb(33, 207, 120);
+        background-color: rgb(33, 207, 120); */
         text-align: center;
         text-decoration: underline;
         margin-top: 50px;
@@ -141,17 +141,17 @@
         flex-direction: column;
         justify-content:start;
         margin-top: 30px;
-        border: 1px solid hotpink;
-        background-color: hotpink;
+        border: 1px solid #ecf8e7;
+        background-color: #d6e6cf;
         margin-left: 20px;
         margin-right: 20px;
         padding: 30px;
     }
 
     .phone_class {
-        border: 1px solid rgb(220, 82, 82);
+        border: 1px solid #cccd74;
         width: 100%;
-        background-color: rgb(220, 82, 82);
+        background-color: #cccd74;
         text-align: center;
         line-height:10px;
         border-radius: 10px;
@@ -160,9 +160,9 @@
     }
     
     .facebook_class {
-        border: 1px solid rgb(220, 82, 82);
+        border: 1px solid #cccd74;
         width: 100%;
-        background-color: rgb(220, 82, 82);
+        background-color: #cccd74;
         text-align: center;
         line-height: 10px;
         border-radius: 10px;
@@ -171,9 +171,9 @@
     }
     
     .instagram_class {
-        border: 1px solid rgb(220, 82, 82);
+        border: 1px solid #cccd74;
         width: 100%;
-        background-color: rgb(220, 82, 82);
+        background-color: #cccd74;
         text-align: center;
         line-height: 10px;
         border-radius: 10px;
@@ -207,13 +207,13 @@
     .bigFormContainer{
         display: flex;
         flex-direction: column;
-        border: 5px solid hotpink;
+        border: 5px solid #d6e6cf;
         margin-top: 100px;
         padding-left: 0px;
         padding-right: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        background-color: hotpink;
+        background-color: #d6e6cf;
     }
 
     .form_input {

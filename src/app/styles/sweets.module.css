@@ -1,9 +1,9 @@
 .sweet_container {
-    border: 1px solid palevioletred;
+    border: 1px solid #fabf59;
     /* width: 500px;
     height: 500px; */
     text-align: center;
-    background-color: palevioletred;
+    background-color: #fabf59;
 }
 
 .sweet_container h1 {
@@ -15,8 +15,8 @@
 }
 
 .sweet_msg {
-    border: 1px solid rgb(23, 179, 101);
-    background-color: rgb(23, 179, 101);
+    /* border: 1px solid rgb(23, 179, 101);
+    background-color: rgb(23, 179, 101); */
     padding: 35px;
     text-align: center;
     text-decoration: underline;
@@ -35,7 +35,7 @@
     row-gap: 40px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: bisque;
+    background-color: white;
 }
 
 
@@ -97,7 +97,7 @@
 }
 
 .image_slider {
-    border: 15px solid rgb(184, 11, 98);
+    border: 15px solid #c1731ad9;
     padding: 10px;
     border-radius: 400px;
     width: 500px;
@@ -132,7 +132,7 @@
     }
 
     .image_slider {
-        border: 10px solid rgb(184, 11, 98);
+        border: 10px solid #c1731ad9;
         padding: 10px;
         border-radius: 400px;
         width: 80%;

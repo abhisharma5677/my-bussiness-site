@@ -4,7 +4,7 @@ import Link from 'next/link'
 const FooterLink = () => {
   return (
     <div>
-        <h3 style={{ textDecoration:"underline" , color:"aqua"}}>Quick Links</h3>
+        <h3 style={{ textDecoration:"underline" , color:"#d6884c"}}>Quick Links</h3>
         <div>
             <ul className={style.quickLink_class}>
                 <li>

@@ -20,7 +20,7 @@ const Header = () => {
         <header className="header_class">
             <div>
                 <Link href="/">
-                    <Image src="/owner.jpg" alt="owner_image" width={70} height={70} className="image_class" />
+                    <Image src="/LOGO.png" alt="owner_image" width={70} height={70} className="image_class" />
                 </Link>
             </div>
             <div>
@@ -63,7 +63,7 @@ const Header = () => {
                 </ul>
             </div>
             <div>
-                <AiOutlineMenu size={40} className="menuBar_class" onClick={handleClick} />
+                <AiOutlineMenu size={30} className="menuBar_class" onClick={handleClick} />
             </div>
 
         </header>

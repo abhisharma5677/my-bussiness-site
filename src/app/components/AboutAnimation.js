@@ -10,7 +10,7 @@ const AboutAnimation = () => {
 
             <div class={style.message_container}>
                 <span class={style.message}> <h1>जय दाऊजी महाराज</h1> </span>
-                <span class={style.message}><h2>Explore our delicious treats!</h2></span>
+                <span class={style.message}><h1>जय श्री राधे कृष्णा</h1></span>
             </div>
 
 

@@ -25,6 +25,7 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
+  margin-bottom: 100px;
 }
 
 .image_class {
@@ -89,22 +90,26 @@ body {
 
   .header_class {
     justify-content: space-between;
+    background-color: rgb(215, 155, 82);
+    z-index: 10;
+    margin-bottom: 70px;
   }
 
   .phone_nav {
     position: absolute;
     display: block;
     list-style:none;
-    background-color: #312127e4;
+    background-color: rgb(215, 155, 82);
     right: 0;
-    top: 60px;
+    top: 40px;
     transition: all 0.5s ease-out;
     width: 60%;
+    z-index: 0;
   }
 
   .menuBar_class {
-    color: white;
-    padding: 15px;
+    color: black;
+    padding: 3px;
     display: block;
   }
 
@@ -115,6 +120,8 @@ body {
   .image_class {
     margin-left: 5px;
     margin-bottom: 0px;
+    height: 50px;
+    width: 50px;
   }
 
   .list_class{

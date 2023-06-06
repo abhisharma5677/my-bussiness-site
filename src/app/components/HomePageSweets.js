@@ -1,6 +1,7 @@
 import style from "@/app/styles/homePage.module.css"
 import HomeSweetCard from "./HomeSweetCard"
 import sweets from "../components/sweetObject"
+import HomePageContactInfo from "./HomePageContactInfo"
 
 const HomePageSweets = () => {
   return (
@@ -12,6 +13,8 @@ const HomePageSweets = () => {
         <div className={style.message}>अतिथि देवो भव</div>
         <div className={style.message}>HAVE THE DELICIOUS TASTE OF PURE SWEETS....</div>
       </div>
+
+      <HomePageContactInfo />
 
       <div style={{display:"flex" , justifyContent:"center"}}>
         <div className={style.homeImagesContainer}>

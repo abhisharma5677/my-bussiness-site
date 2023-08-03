@@ -12,7 +12,7 @@
 
 .serving_msg{
     font-style: italic;
-    color: white;
+    color: aliceblue;
 }
 
 .message_container {
@@ -21,7 +21,7 @@
     overflow: hidden;
     position: relative;
     padding-top: 17px;
-    color: white;
+    color:aliceblue;
 }
 
 .message {
@@ -84,6 +84,6 @@
         overflow: hidden;
         position: relative;
         padding-top: 10px;
-        color: white;
+        color:aliceblue;
     }
 }

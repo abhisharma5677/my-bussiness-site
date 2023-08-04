@@ -2,7 +2,6 @@
     /* border: 1px solid rgb(33, 207, 120);
     background-color: rgb(33, 207, 120); */
     text-align: center;
-    text-decoration: underline;
     padding: 30px;
     margin-top: 80px;
     margin-left: 100px;
@@ -13,11 +12,13 @@
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
-    border: 1px solid #ecf8e7;
-    background-color: #d6e6cf;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 100px;
     margin-left: 100px;
     margin-right: 100px;
+    border-radius: 15px;
+    border: none;
 }
 
 .phone_class {
@@ -74,6 +75,7 @@
 
 .form_label {
     display: block;
+    color: white;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -82,6 +84,10 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    font-weight: bold;
 }
 
 .form_textarea {
@@ -89,6 +95,9 @@
     height: 150px;
     padding: 10px;
     font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
 }
 
 .form_submit {
@@ -107,17 +116,21 @@
 .bigFormContainer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    border: 5px solid #d6e6cf;
+    border: 5px solid rgba(0, 0, 225, 0.5);
     margin-top: 100px;
     padding-left: 300px;
     padding-right: 200px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: #d6e6cf;
+    background-color:rgba(0, 0, 225, 0.5);
+    border-radius: 0px;
+    border: none;
 }
 
 .form_description{
     font-size: xx-large;
+    color: white;
+    font-weight: bold;
     line-height: 40px;
     padding-top: 80px;
 }
@@ -126,26 +139,33 @@
 @media (max-width:700px){
 
     .contactUs_msg {
-        /* border: 1px solid rgb(33, 207, 120);
-        background-color: rgb(33, 207, 120); */
+        border: 1px solid rgba(0, 0, 0,0.5);
+        background-color: rgba(0, 0, 0,0.7);
         text-align: center;
-        text-decoration: underline;
-        margin-top: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
         padding: 15px;
+        color: white;
+        font-weight: bolder;
+        margin-bottom: 0px;
+        border: none;
+        padding-top: 50px;
+        font-family:'Times New Roman', Times, serif;
     }
 
     .card_container {
         display: flex;
         flex-direction: column;
         justify-content:start;
-        margin-top: 30px;
-        border: 1px solid #ecf8e7;
-        background-color: #d6e6cf;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-top: 0px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-left: 0px;
+        margin-right: 0px;
         padding: 30px;
+        border-radius: 0px;
+        border: none;
     }
 
     .phone_class {
@@ -182,13 +202,18 @@
     }
 
     .map_class {
-        margin-top: 100px;
+        margin-top: 0px;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 100px;
     }
 
     .map_class h1{
-        margin: 20px;
+        margin-top: 0px;
+        padding-top: 100px;
+        color: white;
+        font-weight: bold;
     }
 
     .map{
@@ -199,6 +224,7 @@
 
     .form_description{
         font-size:large;
+        color: white;
         line-height: 10px;
         padding-top: 20px;
         text-align: center;
@@ -207,13 +233,15 @@
     .bigFormContainer{
         display: flex;
         flex-direction: column;
-        border: 5px solid #d6e6cf;
-        margin-top: 100px;
+        border: 5px solid rgba(0, 0, 225, 0.5);
+        margin-top: 0px;
         padding-left: 0px;
         padding-right: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        background-color: #d6e6cf;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: rgba(0, 0, 225, 0.5);
+        border-radius: 0px;
+        border: none;
     }
 
     .form_input {
@@ -236,6 +264,10 @@
     .form_flex{
         display: flex;
         justify-content: center;
+    }
+
+    .form_submit{
+        margin-bottom: 40px;
     }
     
 }

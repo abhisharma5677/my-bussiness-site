@@ -4,6 +4,10 @@ body {
   padding: 0px;
 }
 
+*{
+  font-family:'Courier New', Courier, monospace;
+}
+
 @media (max-width: 700px) {
   /* CSS rules for screens with a maximum width of 700px */
 
@@ -92,7 +96,7 @@ body {
     justify-content: space-between;
     background-color: rgb(215, 155, 82);
     z-index: 10;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
   }
 
   .phone_nav {
@@ -131,6 +135,15 @@ body {
 
   .link_class{
     font-weight: bold;
+  }
+
+  .whatsapp{
+    position: fixed;
+    top: 85%;
+    right: 0px;
+    color: white;
+    border: 1px solid blue;
+    background-color: blue;
   }
 
 }

@@ -3,9 +3,9 @@ import style from "@/app/styles/aboutAnimation.module.css"
 const AboutAnimation = () => {
     return (
         <div className={style.pre_container}>
-            <div style={{lineHeight : "2px",color:"aliceblue"}}>
+            <div style={{lineHeight : "5px",color:"aliceblue", fontWeight:"bolder"}}>
                 <h2>PANDIT MISTHAN BHANDAR</h2>
-                <h3>PANDIT JII SWEETS</h3>
+                <h3>पंडित जी की प्रसिद्ध मिठाई</h3>
             </div>
 
             <div class={style.message_container}>
@@ -14,7 +14,7 @@ const AboutAnimation = () => {
             </div>
 
 
-            <h2 className={style.serving_msg}>Serving the lagacy of past 50 years</h2>
+            <h2 className={style.serving_msg}>पिछले 50 वर्षों से आपकी सेवा में</h2>
         </div>
     )
 }

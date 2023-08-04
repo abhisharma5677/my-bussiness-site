@@ -46,11 +46,6 @@ const Header = () => {
                         </Link>
                     </li>
                     <li className="list_class">
-                        <Link href="/qualityAssurance" className="link_class">
-                            QUALITY ASSURANCE
-                        </Link>
-                    </li>
-                    <li className="list_class">
                         <Link href="/contact" className="link_class">
                             CONTACT US
                         </Link>

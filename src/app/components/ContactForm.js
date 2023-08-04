@@ -24,9 +24,7 @@ const ContactForm = () => {
     <div className={style.bigFormContainer}>
 
       <div className={style.form_description}>
-        <p>Fill this form to contact us</p>
-        <p>Give your suggestions </p>
-        <p>Give your reviews</p>
+        <h1><u>Contact Form</u></h1>
       </div>
 
 

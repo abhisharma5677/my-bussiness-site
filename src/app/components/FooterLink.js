@@ -28,11 +28,6 @@ const FooterLink = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/qualityAssurance" className={style.listItem_class}>
-                        QUALITY ASSURANCE
-                    </Link>
-                </li>
-                <li>
                     <Link href="/contact" className={style.listItem_class}>
                         CONTACT US
                     </Link>

@@ -13,7 +13,7 @@ const SweetCard = (props) => {
       </div>
 
       {/* <Image src={props.img} alt="sweet-image" loading="lazy" width={200} height={200} className={style.sweet_image}></Image> */}
-      <h1><u>{props.name}</u></h1>
+      <h1>{props.name}</h1>
       <p>{props.description}</p>
 
     </div>

@@ -107,6 +107,26 @@
 }
 
 
+.QualityClass{
+  border: 2px solid rgba(0,0,0,0.8);
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  margin-top: 100px;
+}
+
+.fssai{
+  border: 1px solid white;
+  border-radius: 200px;
+}
+
+.backgroundImage{
+  text-align: center;
+  background-image: url("/backgroundImage.webp");
+  background-size:contain;
+}
+
+
 
 @media(max-width:700px){
 
@@ -138,25 +158,90 @@
 
   .message{
     text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
+
+  /* .message-container{
+    margin-top: 1000px;
+    border: 10px solid red;
+    background-color: red;
+  } */
 
   .homeImagesContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 80px;
-    row-gap: 10px;
+    margin-top: 0px;
+    row-gap: 0px;
   }
 
   .image_home {
     border: 0px solid #cfa64f;
     padding: 0px;
-    border-radius: 30px;
-    width: 80%;
+    border-radius: 0px;
+    width: 100%;
     height: auto;
     align-self: center;
-    margin-left: 10%;
-    margin-right: 5%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
+
+  .QualityClass{
+    border: 2px solid #544d3b;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .fssai{
+    border: 1px solid white;
+    border-radius: 200px;
+  }
+
+  .emptyDiv{
+    margin-bottom: 70px;
+  }
+
+  .emptyDiv2{
+    margin-top: 100px;
+  }
+
+  .backgroundImage{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-image: url("/background2.jpg");
+    background-size:cover;
+    margin-bottom: 0px;
+    color: rgb(235, 255, 80);
+    margin-top: 0px;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  .completeHomePage{
+    border: 1px solid #edeef0;
+    background-image:url("/background2.jpg");
+  }
+
+  /* .overlay{
+    border: 1px solid rgb(0,0,0);
+    background-color: rgb(0,0,0);
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  } */
   
 }

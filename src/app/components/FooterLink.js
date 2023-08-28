@@ -13,8 +13,8 @@ const FooterLink = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/about" className={style.listItem_class}>
-                        ABOUT US
+                    <Link href="/Updates" className={style.listItem_class}>
+                        UPDATES
                     </Link>
                 </li>
                 <li>

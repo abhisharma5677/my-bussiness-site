@@ -147,3 +147,90 @@ body {
   }
 
 }
+
+
+
+
+/* Backend CSS code */
+.photo_upload_label{
+  border: 1px solid gray;
+  border-radius: 500px;
+  margin-top: 30px;
+}
+
+.photo_upload_input{
+  display: none;
+}
+
+.upload_parent{
+  display: flex;
+  justify-content: center;
+}
+
+.post_btn{
+  color: white;
+  border: green;
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font: bolder;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.post_btn_parent{
+  display: flex;
+  justify-content: center;
+}
+
+.uploaded_image_css{
+  width: 100%;
+  height: auto;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.uploaded_msg_css{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+
+.upload_parent_div{
+  border: 1px solid rgba(0, 0, 0, 0.84);
+  background-color: rgba(0, 0, 0, 0.84);
+  outline: none;
+}
+
+.text_area_class{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.textArea{
+  width: 80%;
+  outline: none;
+  font-weight: bolder;
+  color: white;
+  background-color: gray;
+}
+
+.photo_and_message{
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.84) ;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: none;
+}

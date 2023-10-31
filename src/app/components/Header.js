@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu , AiOutlineClose } from 'react-icons/ai';
 
 
 const Header = () => {
@@ -15,13 +15,21 @@ const Header = () => {
         setMenu(!menu)
     }
 
+    const menuIcon = menu ? <AiOutlineClose size={30} color="white" className="menuBar_class" onClick={handleClick} />
+                       : <AiOutlineMenu size={30} color="white" className="menuBar_class" onClick={handleClick} />
 
     return (
         <header className="header_class">
-            <div>
+            {/* <div>
                 <Link href="/">
                     <Image src="/LOGO.png" alt="owner_image" width={70} height={70} className="image_class" />
                 </Link>
+            </div> */}
+            <div style={{color:"white",fontSize:"20px"}}>
+                {menuIcon}
+            </div>
+            <div>
+                <div style={{color:"white",fontSize:"17px",marginTop:"25px",marginBottom:"25px",marginRight:"0px"}}>Pandit Misthan Bhandar</div>
             </div>
             <div>
                 <ul className={menu ? "phone_nav" : "navbar_class"} onClick={handleClick}>
@@ -36,8 +44,13 @@ const Header = () => {
                         </Link>
                     </li>
                     <li className="list_class">
+                        <Link href="/onlinePayments" className="link_class">
+                            PAY ONLINE
+                        </Link>
+                    </li>
+                    <li className="list_class">
                         <Link href="/fromOwnersDesk" className="link_class">
-                            OWNERS MESSAGE
+                            ABOUT US
                         </Link>
                     </li>
                     <li className="list_class">
@@ -57,9 +70,9 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-            <div>
-                <AiOutlineMenu size={30} className="menuBar_class" onClick={handleClick} />
-            </div>
+            {/* <div>
+                {menuIcon}
+            </div> */}
 
         </header>
     )

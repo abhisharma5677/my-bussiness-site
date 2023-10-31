@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-.sweet_name p {
+.sweet_container p {
     margin-bottom: 20px;
 }
 
@@ -19,7 +19,7 @@
     background-color: rgb(23, 179, 101); */
     padding: 35px;
     text-align: center;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     font-style: italic;
     margin-top: 100px;
     margin-left: 100px;
@@ -115,15 +115,28 @@
 
 @media(max-width:700px){
 
+    .sweet_container {
+        border: 1px solid rgba(128, 128, 128, 0);
+        /* width: 500px;
+        height: 500px; */
+        text-align: center;
+        background-color: #fabf59;
+        box-shadow: 7px 7px 7px 4px rgba(128, 128, 128, 0.518);
+        border-radius: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 40px;
+    }
+
     .sweet_msg{
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
-        border: 1px solid rgba(0, 0, 0, 0.6);
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-        font-weight: bold;
+        border: 1px solid white;
+        background-color: white;
+        color: black;
+        /* font-weight: bold; */
         font-family:'Times New Roman', Times, serif;
     }
 
@@ -132,24 +145,26 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
         background-color: white;
-        row-gap: 3px;
-        border: 1px solid rgba(0, 0, 0, 0.7);
-        background-color: rgba(0, 0, 0, 0.9);
-        border: none;
+        row-gap: 0px;
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 20px;
+        border: 1px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
+        /* font-weight: bold; */
     }
 
     .image_slider {
-        border: 10px solid #c1731ad9;
+        border: 0px solid #c1731ad9;
         padding: 10px;
-        border-radius: 400px;
+        /* border-radius: 400px; */
         width: 80%;
         height: 250px;
         margin-top: 25px;
-        margin-left: 5%;
+        margin-left: 7%;
+        margin-right: 2%;
     }
 }

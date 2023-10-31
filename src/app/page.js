@@ -5,7 +5,7 @@ const page = () => {
     <div>
       <HomePageSweets/>
     </div>
-
+    
   )
 }
 

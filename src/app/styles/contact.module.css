@@ -12,8 +12,8 @@
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(245, 245, 245, 0.88);
+    background-color: rgba(245, 245, 245, 0.88);
     padding: 100px;
     margin-left: 100px;
     margin-right: 100px;
@@ -22,7 +22,7 @@
 }
 
 .phone_class {
-    border: 1px solid #cccd74;
+    border: 1px solid rgba(245, 245, 245, 0.88);
     width: 300px;
     background-color: #cccd74;
     text-align: center;
@@ -75,7 +75,7 @@
 
 .form_label {
     display: block;
-    color: white;
+    color: black;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -139,14 +139,14 @@
 @media (max-width:700px){
 
     .contactUs_msg {
-        border: 1px solid rgba(0, 0, 0,0.5);
-        background-color: rgba(0, 0, 0,0.7);
+        border: 1px solid white;
+        background-color: white;
         text-align: center;
         margin-top: 0px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 15px;
-        color: white;
+        color: rgba(0, 0, 0);
         font-weight: bolder;
         margin-bottom: 0px;
         border: none;
@@ -159,8 +159,8 @@
         flex-direction: column;
         justify-content:start;
         margin-top: 0px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        background-color: rgba(0, 0, 0, 0.7);
+        border: 1px solid white;
+        background-color: white;
         margin-left: 0px;
         margin-right: 0px;
         padding: 30px;
@@ -169,9 +169,10 @@
     }
 
     .phone_class {
-        border: 1px solid #cccd74;
+        border: 1px solid white;
+        box-shadow: 7px 7px 7px 5px rgba(128, 128, 128, 0.7);
         width: 100%;
-        background-color: #cccd74;
+        background-color: rgba(255, 255, 255, 0.373);
         text-align: center;
         line-height:10px;
         border-radius: 10px;
@@ -180,9 +181,10 @@
     }
     
     .facebook_class {
-        border: 1px solid #cccd74;
+        border: 1px solid white;
+        box-shadow: 7px 7px 7px 5px rgba(128, 128, 128, 0.7);
         width: 100%;
-        background-color: #cccd74;
+        background-color: rgba(255, 255, 255, 0.373);
         text-align: center;
         line-height: 10px;
         border-radius: 10px;
@@ -191,9 +193,10 @@
     }
     
     .instagram_class {
-        border: 1px solid #cccd74;
+        border: 1px solid white;
+        box-shadow: 7px 7px 7px 5px rgba(128, 128, 128, 0.7);
         width: 100%;
-        background-color: #cccd74;
+        background-color: rgba(255, 255, 255, 0.373);
         text-align: center;
         line-height: 10px;
         border-radius: 10px;
@@ -205,26 +208,31 @@
         margin-top: 0px;
         text-align: center;
         margin-bottom: 0px;
-        background-color: rgba(0, 0, 0, 0.8);
-        padding-bottom: 100px;
+        border-width: 1px;
+        /* box-shadow: 7px 7px 7px 5px rgba(128, 128, 128, 0.7); */
+        /* background-color: white; */
+        padding-bottom: 100px;    
     }
 
     .map_class h1{
         margin-top: 0px;
         padding-top: 100px;
-        color: white;
+        color: black;
         font-weight: bold;
     }
 
     .map{
-        padding: 20px;
+        padding: 0px;
         width: 90%;
         height: 500px;
+        border: 1px solid grey;
+        box-shadow: 7px 7px 7px 5px grey;
+        border-radius: 10px;
     }
 
     .form_description{
         font-size:large;
-        color: white;
+        color: black;
         line-height: 10px;
         padding-top: 20px;
         text-align: center;
@@ -233,14 +241,15 @@
     .bigFormContainer{
         display: flex;
         flex-direction: column;
-        border: 5px solid rgba(0, 0, 225, 0.5);
-        margin-top: 0px;
-        padding-left: 0px;
+        border: 5px solid white;
+        box-shadow: 5px 5px 5px 8px rgba(128, 128, 128, 0.57);
+        margin-top: 50px;
+        padding-left: 10px;
         padding-right: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
-        background-color: rgba(0, 0, 225, 0.5);
-        border-radius: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: white;
+        border-radius: 10px;
         border: none;
     }
 

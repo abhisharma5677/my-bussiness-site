@@ -18,8 +18,13 @@ const FooterLink = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link href="/onlinePayments" className={style.listItem_class}>
+                        Pay ONLINE
+                    </Link>
+                </li>
+                <li>
                     <Link href="/fromOwnersDesk" className={style.listItem_class}>
-                        OWNERS MESSAGE
+                        ABOUT US
                     </Link>
                 </li>
                 <li>

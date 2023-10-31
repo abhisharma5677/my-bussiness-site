@@ -64,44 +64,45 @@ const UploadPhotos = () => {
         });
     };
 
-
-
+    
     return (
-        <div className='upload_parent_div'>
-            <form onSubmit={postPhotoFunction}>
+        <div style={{display:"flex",justifyContent:"center"}}>
+            <div className='upload_parent_div'>
+                <form onSubmit={postPhotoFunction}>
 
-                <div className='upload_parent'>
-                    <label htmlFor='file-upload'>
-                        <Image src={userPhoto.myFile || '/upload.jpg'} alt='profile' width={140} height={140} className='photo_upload_label'></Image>
-                    </label>
-                </div>
+                    <div className='upload_parent'>
+                        <label htmlFor='file-upload'>
+                            <Image src={userPhoto.myFile || '/uploads2.png'} alt='profile' width={140} height={140} className='photo_upload_label'></Image>
+                        </label>
+                    </div>
 
-                <input type='file' label='Image'
-                    onChange={handleFileUpload}
-                    name='myFile' accept='.jpeg, .png, .jpg' id='file-upload'
-                    className='photo_upload_input'
-                /><br />
+                    <input type='file' label='Image'
+                        onChange={handleFileUpload}
+                        name='myFile' accept='.jpeg, .png, .jpg' id='file-upload'
+                        className='photo_upload_input'
+                    /><br />
 
-                <div className='text_area_class'>
-                    <textarea id="message" name="message" rows="3"
-                        onChange={(event) => {
-                            setUserPhoto({
-                                ...userPhoto,
-                                message: event.target.value,
-                            })
-                        }} value={userPhoto.message} placeholder='Write Updates...'
-                        className='textArea'>
-                    </textarea><br />
-                </div>
+                    <div className='text_area_class'>
+                        <textarea id="message" name="message" rows="3"
+                            onChange={(event) => {
+                                setUserPhoto({
+                                    ...userPhoto,
+                                    message: event.target.value,
+                                })
+                            }} value={userPhoto.message} placeholder='Write Updates...'
+                            className='textArea'>
+                        </textarea><br />
+                    </div>
 
-                <div className='post_btn_parent'>
-                    <input type="submit" value="Update"
-                        className='post_btn'
-                    />
-                </div>
+                    <div className='post_btn_parent'>
+                        <input type="submit" value="Update"
+                            className='post_btn'
+                        />
+                    </div>
 
-            </form>
+                </form>
 
+            </div>
         </div>
     )
 }

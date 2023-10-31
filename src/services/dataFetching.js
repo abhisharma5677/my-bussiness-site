@@ -1,4 +1,6 @@
 import { httpAxios } from "@/helper/httpHelper";
+// import { useParams } from "react-router-dom";
+
 
 export async function addNewPhoto(photoData){
     const result = await httpAxios.post('/api/photo',photoData);
@@ -11,3 +13,10 @@ export async function getPhotosFromDatabase(){
     const result2 = await httpAxios.get('/api/photo').then((response)=>response.data);
     return result2;
 }
+
+
+// export async function deletePhoto(photoId){
+//     const id = useParams().id;
+//     const result3 = await httpAxios.delete(`/api/photo/${id}`);
+//     return result3;
+// }

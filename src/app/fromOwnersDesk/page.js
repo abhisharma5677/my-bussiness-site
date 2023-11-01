@@ -10,7 +10,7 @@ const page = () => {
           the leading sweet house of <b>Hardaspur Aonla, Bareilly</b> was
           established in 1969 by Late Shri Bhola Nath ji with the motive of
           serving the customers of Bareilly with premium quality sweets and
-          confectionary items. Although, the group started it's operation with
+          confectionary items. Although, the group started its operation with
           the famous shop located in Hardaspur Aonla Bareilly by the name of Hari
           Misthan Bhandar, but the name got prominence with the opening of Pandit
           Misthan Bhandar outlet and market at Hardaspur Aonla, Bareilly.

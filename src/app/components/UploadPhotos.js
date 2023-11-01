@@ -64,9 +64,9 @@ const UploadPhotos = () => {
         });
     };
 
-    
+
     return (
-        <div style={{display:"flex",justifyContent:"center"}}>
+        <div style={{ display: "flex", justifyContent: "center" }}>
             <div className='upload_parent_div'>
                 <form onSubmit={postPhotoFunction}>
 
@@ -80,6 +80,7 @@ const UploadPhotos = () => {
                         onChange={handleFileUpload}
                         name='myFile' accept='.jpeg, .png, .jpg' id='file-upload'
                         className='photo_upload_input'
+                        required
                     /><br />
 
                     <div className='text_area_class'>
@@ -89,7 +90,10 @@ const UploadPhotos = () => {
                                     ...userPhoto,
                                     message: event.target.value,
                                 })
-                            }} value={userPhoto.message} placeholder='Write Updates...'
+                            }}
+                            value={userPhoto.message}
+                            placeholder='Write Updates...'
+                            required
                             className='textArea'>
                         </textarea><br />
                     </div>

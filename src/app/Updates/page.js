@@ -6,8 +6,8 @@ import UploadPhotos from '../components/UploadPhotos';
 const page = () => {
   return (
     <div>
-      <UploadPhotos />
       <GetPhoto />
+      <UploadPhotos />
     </div>
   )
 }

@@ -15,8 +15,7 @@ export async function getPhotosFromDatabase(){
 }
 
 
-// export async function deletePhoto(photoId){
-//     const id = useParams().id;
-//     const result3 = await httpAxios.delete(`/api/photo/${id}`);
+// export async function deletePhoto(photoId , params){
+//     const result3 = await httpAxios.delete(`/api/photo`);
 //     return result3;
 // }

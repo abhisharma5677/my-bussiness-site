@@ -6,7 +6,7 @@ import QualityAssurance from "./QualityAssurance"
 import BackgroundImage from "./BackgroundImage"
 import Link from "next/link"
 import { FaWhatsappSquare } from "react-icons/fa";
-import { MdLocationOn} from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
 
 
 const HomePageSweets = () => {
@@ -37,9 +37,10 @@ const HomePageSweets = () => {
 
       <QualityAssurance />
 
-      <p><Link href="https://wa.me/918384895512" className="whatsapp"><FaWhatsappSquare size={40} /></Link> </p>
-      <p><Link href="https://www.google.com/maps/place/Pandit+Misthan+Bhandar/@28.3944699,79.0856902,17z/data=!3m1!4b1!4m6!3m5!1s0x390ab73fc87e984f:0xf3602bc43f44d2c8!8m2!3d28.3944699!4d79.0882651!16s%2Fg%2F11byvkvw9h?entry=ttu" className="location"><MdLocationOn size={40} /></Link></p>
-
+      <div className="whatsapp">
+        <p><Link href="https://wa.me/918384895512"><FaWhatsappSquare size={40} color="white" /></Link> </p>
+        <p><Link href="https://www.google.com/maps/place/Pandit+Misthan+Bhandar/@28.3944699,79.0856902,17z/data=!3m1!4b1!4m6!3m5!1s0x390ab73fc87e984f:0xf3602bc43f44d2c8!8m2!3d28.3944699!4d79.0882651!16s%2Fg%2F11byvkvw9h?entry=ttu"><MdLocationOn size={40} color="white" /></Link></p>
+      </div>
     </div>
   )
 }

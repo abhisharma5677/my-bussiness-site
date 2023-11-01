@@ -11,11 +11,12 @@ export async function POST(request){
 
     try{
 
-        const { message , myFile } = await request.json();
+        const { message , myFile , date } = await request.json();
 
         const newPhoto = new Photo({
             message,
             myFile,
+            date,
         }) 
 
         const createPhoto = await newPhoto.save();
@@ -23,7 +24,8 @@ export async function POST(request){
         console.log("Post API called succesfully...");
 
         return NextResponse.json(createPhoto,{
-            status:201
+            status:201,
+            success:true,
         })
 
     }catch(error){
@@ -31,6 +33,7 @@ export async function POST(request){
 
         return NextResponse.json({
             message:"failed to create photo...",
+            status:500,
             success:false,
         })
     }
@@ -48,6 +51,7 @@ export async function GET(request){
         return NextResponse.json(photoData,{
             message:"Data get successfully...",
             status:201,
+            success:true,
         }) 
         console.log("Get API called successfully.....")
 
@@ -56,6 +60,8 @@ export async function GET(request){
         console.log(error);
         return NextResponse.json({
             message:"Error in get request !!",
+            success:false,
+            status:404,
         })
 
     }

@@ -1,10 +1,13 @@
 import React from 'react'
-import OnlinePayment from '../components/OnlinePayment'
+import BuyProduct from '../components/razorpay/BuyProduct'
+import BoxCount from '../components/BoxCount'
+
 
 const page = () => {
   return (
     <div>
-        <OnlinePayment />
+      <BoxCount />
+      <BuyProduct />
     </div>
   )
 }

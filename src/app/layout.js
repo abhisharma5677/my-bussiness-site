@@ -4,6 +4,9 @@ import Header from './components/Header'
 import AboutAnimation from './components/AboutAnimation'
 import Footer from './components/Footer'
 import Head from 'next/head';
+import Script from 'next/script'
+
+// import NextNProgress from 'nextjs-progressbar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,16 +17,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Head>
-        <link href="../../dist/output.js" rel="stylesheet"></link>
-      </Head>
-      <body className={inter.className}>
-        <AboutAnimation />
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <Head>
+          <link href="../../dist/output.js" rel="stylesheet"></link>
+        </Head>
+        <body className={inter.className}>
+          <AboutAnimation />
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+      <Script src="https://checkout.razorpay.com/v1/checkout.js"
+      />
+    </>
   )
 }

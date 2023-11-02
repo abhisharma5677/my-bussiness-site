@@ -1,37 +1,40 @@
-const Razorpay = require("razorpay");
-const shortid = require("shortid");
+import { NextResponse } from "next/server";
+import Razorpay from "razorpay";
+import shortid from "shortid";
 
-export default async function handler(req, res) {
-    if (req.method === "POST") {
-        // Initialize razorpay object
-        const razorpay = new Razorpay({
-            key_id: process.env.RAZORPAY_KEY,
-            key_secret: process.env.RAZORPAY_SECRET,
-        });
+const instance = new Razorpay({
+    key_id: process.env.RAZORPAY_API_KEY,
+    key_secret: process.env.RAZORPAY_API_SECRET,
+});
 
-        // Create an order -> generate the OrderID -> Send it to the Front-end
-        const payment_capture = 1;
-        const amount = 499;
-        const currency = "INR";
-        const options = {
-            amount: (amount * 100).toString(),
-            currency,
-            receipt: shortid.generate(),
-            payment_capture,
-        };
 
-        try {
-            const response = await razorpay.orders.create(options);
-            res.status(200).json({
-                id: response.id,
-                currency: response.currency,
-                amount: response.amount,
-            });
-        } catch (err) {
-            console.log(err);
-            res.status(400).json(err);
+export async function GET() {
+
+    const payment_capture = 1;
+    const amount = 1 * 100 // amount in paisa. In our case it's INR 1
+    const currency = "INR";
+    const options = {
+        amount: (amount).toString(),
+        currency,
+        receipt: shortid.generate(),
+        payment_capture,
+        notes: {
+            // These notes will be added to your transaction. So you can search it within their dashboard.
+            // Also, it's included in webhooks as well. So you can automate it.
+            paymentFor: "testingDemo",
+            userId: "100",
+            productId: 'P100'
         }
-    } else {
-        // Handle any other HTTP method
-    }
+    };
+
+    const order = await instance.orders.create(options);
+    return NextResponse.json({ msg: "success", order });
+}
+
+
+export async function POST(req) {
+    const body = await req.json();
+
+
+    return NextResponse.json({ msg: body });
 }

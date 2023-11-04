@@ -4,10 +4,13 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import { AiOutlineMenu , AiOutlineClose } from 'react-icons/ai';
+import LoginContext from '../context/LoginContext';
+import { useContext } from 'react';
 
 
 const Header = () => {
 
+    const { login } = useContext(LoginContext);
 
     const[menu , setMenu] = useState(false);
 
@@ -68,6 +71,21 @@ const Header = () => {
                             REVIEWS AND RATINGS
                         </Link>
                     </li>
+                    <li className="list_class">
+                        <Link href="/LoginPage" className="link_class">
+                            LOGIN
+                        </Link>
+                    </li>
+                    {login && (<li className="list_class">
+                        <Link href="/CreatePost" className="link_class">
+                            CREATE POST
+                        </Link>
+                    </li>)}
+                    {login && (<li className="list_class">
+                        <Link href="/SignUpPage" className="link_class">
+                            SIGN UP
+                        </Link>
+                    </li>)}
                 </ul>
             </div>
             {/* <div>

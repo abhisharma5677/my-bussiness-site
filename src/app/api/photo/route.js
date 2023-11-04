@@ -23,9 +23,10 @@ export async function POST(request){
 
         console.log("Post API called succesfully...");
 
-        return NextResponse.json(createPhoto,{
+        return NextResponse.json({
             status:201,
             success:true,
+            createPhoto,
         })
 
     }catch(error){

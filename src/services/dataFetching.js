@@ -15,7 +15,13 @@ export async function getPhotosFromDatabase(){
 }
 
 
-// export async function deletePhoto(photoId , params){
-//     const result3 = await httpAxios.delete(`/api/photo`);
-//     return result3;
-// }
+export async function loginFunction(loginData){
+    const result3 = await httpAxios.post('/api/OwnerLogin' , loginData);
+    return result3;
+}
+
+
+export async function signUpFunction(signUpData){
+    const result4 = await httpAxios.post('/api/OwnerSignUp' , signUpData);
+    return result4;
+}

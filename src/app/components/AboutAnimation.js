@@ -8,9 +8,9 @@ const AboutAnimation = () => {
                 <h3>पंडित जी की प्रसिद्ध मिठाई</h3>
             </div>
 
-            <div class={style.message_container}>
-                <span class={style.message}> <h1>जय दाऊजी महाराज</h1> </span>
-                <span class={style.message}><h1>जय श्री राधे कृष्णा</h1></span>
+            <div className={style.message_container}>
+                <span className={style.message}> <h1>जय दाऊजी महाराज</h1> </span>
+                <span className={style.message}><h1>जय श्री राधे कृष्णा</h1></span>
             </div>
 
 

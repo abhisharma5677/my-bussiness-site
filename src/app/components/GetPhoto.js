@@ -1,13 +1,17 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Image from 'next/image';
 import { getPhotosFromDatabase, deletePhoto } from '@/services/dataFetching';
 import { AiFillDelete } from 'react-icons/ai';
 import axios from 'axios';
+import { toast } from 'react-toastify'
+import LoginContext from '../context/LoginContext';
 // import DatabasePhoto from './DatabasePhoto';
 
 const GetPhoto = () => {
+
+    const {login} = useContext(LoginContext);
 
     const [data, setData] = useState([]);
 
@@ -23,9 +27,21 @@ const GetPhoto = () => {
     }, [])
 
     async function handleDelete(photoId) {
-        await axios.delete(`/api/photo/${photoId}`);
-        getDataOnRender();
-        console.log("Photo deleted succesfully...");
+        const deleteResult = await axios.delete(`/api/photo/${photoId}`);
+
+        // If deletion is succesfull then do the below thing...
+        if(deleteResult.data.success){
+
+            //Toast message on deletion...
+            toast.success("Post deleted successfully...",{
+                position:'top-center'
+            })
+
+            //Refresh the page after deletion...
+            getDataOnRender();
+
+            // console.log("Photo deleted succesfully...");
+        }
     }
 
     return (
@@ -45,9 +61,10 @@ const GetPhoto = () => {
                                 <div>Posted On</div>
                                 {element.createdAt}
                             </div>
-                            <AiFillDelete className='delete-icon' onClick={() => {
+                            {/* Show delete button if the user is registered... */}
+                            {login && <AiFillDelete className='delete-icon' onClick={() => {
                                 handleDelete(element._id)
-                            }} />
+                            }} />}
                         </div>
                         {element.myFile && (<Image src={`${element.myFile}`} alt="decoder" width={200} height={200} className='uploaded_image_css' />)}
                         {element.message && (<p className='uploaded_msg_css'>{element.message}</p>)}

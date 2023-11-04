@@ -4,10 +4,13 @@ import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image';
 import { addNewPhoto } from '@/services/dataFetching';
-
+import { toast } from 'react-toastify'
+import { useRouter } from "next/navigation";
 
 
 const UploadPhotos = () => {
+
+    const router = useRouter();
 
     const [userPhoto, setUserPhoto] = useState({
         message: '',
@@ -15,22 +18,40 @@ const UploadPhotos = () => {
     })
 
 
-    const postPhotoFunction = () => {
+    async function postPhotoFunction(e){
+
+        e.preventDefault();
 
         try {
 
-            const result = addNewPhoto(userPhoto)
-            console.log(result)
-            setUserPhoto({
-                message: '',
-                myFile: '',
-            })
+            const result = await addNewPhoto(userPhoto)
+            console.log(result);
+
+            if (result.data.success) {
+                //toast message for successfully uploading post...
+                toast.success("Post Uploaded Succesfully...", {
+                    position: "top-center"
+                })
+
+
+                //If succesfully uploaded then move to the next page
+                router.push('/Updates');
+            }
+
 
         } catch (error) {
 
             console.log(error);
+            toast.error("Error in Post Uploading !!", {
+                position: "top-center"
+            })
 
         }
+
+        setUserPhoto({
+            message: '',
+            myFile: '',
+        })
 
     }
 

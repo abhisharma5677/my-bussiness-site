@@ -1,7 +1,8 @@
 "use client"
 
 import React from 'react'
-import { useState } from 'react'
+import { useState , useContext } from 'react'
+import AmountContext from '../context/AmountContext';
 
 const BoxCount = () => {
 
@@ -10,11 +11,15 @@ const BoxCount = () => {
     const [oneByFour , setOneByFour] = useState(0);
     const [totalAmount , setTotalAmount] = useState(0);
 
+    const {setTotal} = useContext(AmountContext);
+    const {total} = useContext(AmountContext);
+
     // One kg functions...
     function addOneKg(){
         // oneKg = oneKg + 1;
         setOneKg(oneKg + 1);
         setTotalAmount(totalAmount + 240);
+        setTotal(totalAmount + 240);   
     }
     function removeOneKg(){
         if(oneKg === 0){
@@ -23,6 +28,7 @@ const BoxCount = () => {
         // oneKg = oneKg - 1;
         setOneKg(oneKg - 1);
         setTotalAmount(totalAmount - 240);
+        setTotal(totalAmount - 240);
     }
 
     // Half kg functions...
@@ -30,6 +36,7 @@ const BoxCount = () => {
         // halfKg = halfKg + 1;
         setHalfKg(halfKg + 1);
         setTotalAmount(totalAmount + 120);
+        setTotal(totalAmount + 120);
     }
     function removeHalfKg(){
         if(halfKg === 0){
@@ -38,6 +45,7 @@ const BoxCount = () => {
         // halfKg = halfKg - 1;
         setHalfKg(halfKg - 1);
         setTotalAmount(totalAmount - 120);
+        setTotal(totalAmount - 120);
     }
 
     // One by four
@@ -45,6 +53,7 @@ const BoxCount = () => {
         // oneByFour = oneByFour + 1;
         setOneByFour(oneByFour + 1);
         setTotalAmount(totalAmount + 60);
+        setTotal(totalAmount + 60);
     }
     function removeOneByFour(){
         if(oneByFour === 0){
@@ -53,6 +62,7 @@ const BoxCount = () => {
         // oneByFour = oneByFour - 1;
         setOneByFour(oneByFour - 1);
         setTotalAmount(totalAmount - 60);
+        setTotal(totalAmount - 60);
     }
 
     return (
@@ -77,7 +87,7 @@ const BoxCount = () => {
             <button onClick={removeOneByFour}>REMOVE</button>
             <div>{oneByFour}</div>
 
-            <h1>Total Payable Amount = {totalAmount}</h1>
+            <h1>Total Payable Amount = {total}</h1>
         </div>
     )
 }

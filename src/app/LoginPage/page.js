@@ -1,11 +1,10 @@
 import React from 'react'
-import GetPhoto from '../components/GetPhoto'
-
+import LoginPage from '../components/LoginPage'
 
 const page = () => {
   return (
     <div>
-      <GetPhoto />
+        <LoginPage />
     </div>
   )
 }

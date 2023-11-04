@@ -16,7 +16,7 @@ const BuyProduct = () => {
         const key = process.env.RAZORPAY_API_KEY;
         console.log(key);
         // Make API call to the serverless API
-        const data = await fetch("http://localhost:3000/api/razorpay");
+        const data = await fetch("https://panditjii-sweet-shop.vercel.app/api/razorpay");
         const { order } = await data.json();
         console.log(order.id);
         const options = {
@@ -31,7 +31,7 @@ const BuyProduct = () => {
                 // if (response.length==0) return <Loading/>;
                 console.log(response);
 
-                const data = await fetch("http://localhost:3000/api/paymentverify", {
+                const data = await fetch("https://panditjii-sweet-shop.vercel.app/api/paymentverify", {
                     method: "POST",
                     // headers: {
                     //   // Authorization: 'YOUR_AUTH_HERE'

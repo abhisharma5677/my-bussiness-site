@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import GetPhoto from '../components/GetPhoto'
+import Loading from '../loading'
 
 
 const page = () => {
   return (
     <div>
-      <GetPhoto />
+      <Suspense fallback={<Loading />}>
+        <GetPhoto />
+      </Suspense>
     </div>
   )
 }

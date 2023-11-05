@@ -1,7 +1,5 @@
-import AmountContext from "@/app/context/AmountContext";
 import { NextResponse } from "next/server";
 import Razorpay from "razorpay";
-import { useContext } from "react";
 import shortid from "shortid";
 
 const instance = new Razorpay({
@@ -12,10 +10,8 @@ const instance = new Razorpay({
 
 export async function GET() {
 
-    const {total} = useContext(AmountContext);
-
     const payment_capture = 1;
-    const amount = 1 * 100 ;        // amount in paisa. In our case it's INR 1
+    const amount = 1 * 100 // amount in paisa. In our case it's INR 1
     const currency = "INR";
     const options = {
         amount: (amount).toString(),
@@ -31,13 +27,16 @@ export async function GET() {
         }
     };
 
-    const order = await instance.orders.create(options);
-    return NextResponse.json({ msg: "success", order });
+    const order = await instance.orders.create(options , function(err , order){
+        console.log(order);
+    });
+    return NextResponse.json({ msg: "success", order , success:true, });
 }
 
 
 export async function POST(req) {
     const body = await req.json();
+
 
     return NextResponse.json({ msg: body });
 }

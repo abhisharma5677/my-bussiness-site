@@ -11,6 +11,8 @@ import AmountContextProvider from './context/AmountContextProvider'
 import LoginContextProvider from './context/LoginContextProvider'
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from './loading'
+import { Suspense } from 'react'
 
 // import NextNProgress from 'nextjs-progressbar';
 
@@ -32,7 +34,9 @@ export default function RootLayout({ children }) {
               <ToastContainer />
               <AboutAnimation />
               <Header />
-              {children}
+              <Suspense fallback={<Loading />}>
+                {children}
+              </Suspense>
               <Footer />
             </AmountContextProvider>
           </LoginContextProvider>

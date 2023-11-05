@@ -1,27 +1,39 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React, { Suspense, useContext } from "react";
 import Buy from "./Buy";
 import { useRouter } from 'next/navigation';
 import Loading from "@/app/loading";
+import AmountContext from "@/app/context/AmountContext";
+import axios from "axios";
+
 
 
 const BuyProduct = () => {
 
+    const {total} = useContext(AmountContext);
+
     const router = useRouter()
 
 
-    const makePayment = async ({ productId = null }) => {
+    async function makePayment({ productId = null }){
+
+        console.log("Payment started...")
+        console.log(total)
+
         // "use server"
         const key = process.env.RAZORPAY_API_KEY;
         console.log(key);
+
         // Make API call to the serverless API
-        const data = await fetch("https://panditjii-sweet-shop.vercel.app/api/razorpay");
+        const data = await axios.get("/api/razorpay");
+        console.log(data);
+
         const { order } = await data.json();
-        console.log(order.id);
+        console.log(order);
         const options = {
             key: key,
-            name: "Abhishek Sharma",
+            name: "mmantratech",
             currency: order.currency,
             amount: order.amount,
             order_id: order.id,
@@ -31,7 +43,7 @@ const BuyProduct = () => {
                 // if (response.length==0) return <Loading/>;
                 console.log(response);
 
-                const data = await fetch("https://panditjii-sweet-shop.vercel.app/api/paymentverify", {
+                const data = await fetch("/api/paymentverify", {
                     method: "POST",
                     // headers: {
                     //   // Authorization: 'YOUR_AUTH_HERE'
@@ -42,7 +54,9 @@ const BuyProduct = () => {
                         razorpay_signature: response.razorpay_signature,
                     }),
                 });
-                
+
+
+
                 const res = await data.json();
 
                 console.log("response verify==", res)
@@ -61,9 +75,9 @@ const BuyProduct = () => {
                 // alert(response.razorpay_signature);
             },
             prefill: {
-                name: "Abhishek",
-                email: "imabhishek5677@gmail.com",
-                contact: "8384895512",
+                name: "mmantratech",
+                email: "mmantratech@gmail.com",
+                contact: "9354536067",
             },
         };
 
@@ -73,7 +87,7 @@ const BuyProduct = () => {
         paymentObject.on("payment.failed", function (response) {
             alert("Payment failed. Please try again. Contact support for help");
         });
-    };
+    }
 
     return (
         <>

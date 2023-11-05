@@ -306,15 +306,86 @@ body {
 
 
 /*............... CSS for online payments............. */
-.payment_input{
-  width:90%;
-  align-self: center;
-  margin-top: 100px;
-  margin-bottom: 40px;
+.paymentContainer{
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: 7px 7px 7px 6px rgba(128, 128, 128, 0.8);
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 50px;
 }
 
-.checkout_btn{
-  align-self: center;
-  margin-bottom: 100px;
+.boxHeading{
+  font-size:larger;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 20px;
 }
+
+.addBox{
+  border: 1px solid blue;
+  background-color: blue;
+  padding: 5px 10px;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 5px;
+  width: 130px;
+  height: 40px;
+  margin-right: 10%;
+}
+
+.removeBox{
+  border: 1px solid orange;
+  background-color: orange;
+  padding: 5px 10px;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 130px;
+  height: 40px;
+}
+
+.boxSelected{
+  margin-left: 20px;
+  font-weight: 600;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+
+.totalAmount{
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.totalCount{
+  font-weight: bolder;
+  font-size: xx-large;
+  margin-top: 15px;
+  color: blue;
+}
+
+.QR{
+  border: 1px solid white;
+  box-shadow: 7px 7px 7px 6px rgba(128, 128, 128, 0.746);
+  text-align: center;
+  width: 90%;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.QR_image{
+  width: 300px;
+  height: auto;
+}
+
+
+
+
+
 

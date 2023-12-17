@@ -570,7 +570,7 @@ body {
   border: 1px solid blue;
   background-color: blue;
   padding: 5px 10px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: large;
   border-radius: 5px;
@@ -593,7 +593,7 @@ body {
 
 .boxSelected {
   margin-left: 20px;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 45px;
   margin-top: 20px;
 }

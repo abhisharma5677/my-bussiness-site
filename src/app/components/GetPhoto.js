@@ -11,7 +11,7 @@ import LoginContext from '../context/LoginContext';
 
 const GetPhoto = () => {
 
-    const {login} = useContext(LoginContext);
+    const { login } = useContext(LoginContext);
 
     const [data, setData] = useState([]);
 
@@ -30,11 +30,11 @@ const GetPhoto = () => {
         const deleteResult = await axios.delete(`/api/photo/${photoId}`);
 
         // If deletion is succesfull then do the below thing...
-        if(deleteResult.data.success){
+        if (deleteResult.data.success) {
 
             //Toast message on deletion...
-            toast.success("Post deleted successfully...",{
-                position:'top-center'
+            toast.success("Post deleted successfully...", {
+                position: 'top-center'
             })
 
             //Refresh the page after deletion...
@@ -55,19 +55,21 @@ const GetPhoto = () => {
                 // console.log(newString);
 
                 return (
-                    <div key={element._id} className='photo_and_message'>
-                        <div className='date_and_delete'>
-                            <div className='date_css'>
-                                <div>Posted On</div>
-                                {element.createdAt}
+                    <div key={element._id} className='upload_center_flex'>
+                        <div className='photo_and_message'>
+                            <div className='date_and_delete'>
+                                <div className='date_css'>
+                                    <div>Posted On</div>
+                                    {element.createdAt}
+                                </div>
+                                {/* Show delete button if the user is registered... */}
+                                {login && <AiFillDelete className='delete-icon' onClick={() => {
+                                    handleDelete(element._id)
+                                }} />}
                             </div>
-                            {/* Show delete button if the user is registered... */}
-                            {login && <AiFillDelete className='delete-icon' onClick={() => {
-                                handleDelete(element._id)
-                            }} />}
+                            {element.myFile && (<Image src={`${element.myFile}`} alt="decoder" width={200} height={200} className='uploaded_image_css' />)}
+                            {element.message && (<p className='uploaded_msg_css'>{element.message}</p>)}
                         </div>
-                        {element.myFile && (<Image src={`${element.myFile}`} alt="decoder" width={200} height={200} className='uploaded_image_css' />)}
-                        {element.message && (<p className='uploaded_msg_css'>{element.message}</p>)}
                     </div>
                 )
             })}

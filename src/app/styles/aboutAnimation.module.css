@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+    z-index: 10;
     /* position: relative;
     left: 0;
     right: 0;

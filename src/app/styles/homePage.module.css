@@ -1,4 +1,4 @@
-.homePageContact_class {
+/* .homePageContact_class {
   border: 2px solid rgba(237, 227, 159, 0.859);
   background-color: rgba(237, 227, 159, 0.859);
   display: flex;
@@ -7,43 +7,46 @@
   height: 120px;
   width: 1500px;
   margin-top: 70px;
-}
+} */
 
-.homePageContact_class p {
+/* .homePageContact_class p {
   font-size: xx-large;
   font-weight: bolder;
-}
+} */
 
 .image_home {
-  border: 0px solid #87489d;
-  padding: 10px;
-  border-radius: 40px;
-  width: 500px;
-  height: 400px;
-  margin-top: 25px;
+  border: 0px solid #c0b738;
+  /* padding: 10px; */
+  /* border-radius: 40px; */
+  width: 100%;
+  height: 550px;
+  margin: 0px;
 }
 
-.image_home:hover {
+/* .image_home:hover {
   padding: 0;
   transition-delay: 10ms;
   transition-duration: 400ms;
-}
+} */
 
 .homeImagesContainer {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 30px;
-  column-gap: 30px;
-  margin-top: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0px;
+  column-gap: 0px;
+  margin-top: 0px;
+  margin-left: 0%;
+  margin-bottom: 0px;
 }
 
 .message-container {
   position: relative;
-  width: 300px;
+  width: 400px;
   /* Adjust the width to fit your messages */
   height: 100px;
   /* Adjust the height to fit your messages */
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .message {
@@ -52,16 +55,18 @@
   left: 600px; */
   opacity: 0;
   width: auto;
-  height: 10px;
+  height: 0px;
   display: flex;
   padding: 5px;
-  font-weight:900;
+  font-weight:bolder;
   align-items: center;
   justify-content: center;
   font-size:xx-large;
-  color: black;
+  color: yellow;
   font-style: italic;
   animation: messageAnimation 50s infinite;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .message:nth-child(1) {
@@ -106,13 +111,27 @@
   }
 }
 
+.completeHomePage{
+  border: 1px solid gray;
+  background-image:url("/choco2.jpg");
+  /* background-size: cover; */
+}
+
+.emptyDiv{
+  margin-bottom: 40px;
+}
+
+.emptyDiv2{
+  margin-top: 40px;
+}
 
 .QualityClass{
+  width: auto;
+  height: 600px;
   border: 2px solid rgba(0,0,0,0.8);
   text-align: center;
   background-color: rgba(0,0,0,0.8);
   color: white;
-  margin-top: 100px;
 }
 
 .fssai{
@@ -121,12 +140,28 @@
 }
 
 .backgroundImage{
+  width: 100%;
+  height: 604px;
   text-align: center;
-  background-image: url("/backgroundImage.webp");
-  background-size:contain;
+  background-image: url("/backgroundImage.jpg");
+  background-size:cover;
+  color: white;
+  /* position: relative;
+  bottom: 21px; */
 }
 
+.backgroundImage div{
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.main_page_flex{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap:0px;
+  row-gap: 0px;
+}
 
 @media(max-width:700px){
 
@@ -215,6 +250,7 @@
   }
 
   .backgroundImage{
+    width: auto;
     padding-top: 40px;
     padding-bottom: 50px;
     padding-left: 10px;
@@ -231,6 +267,11 @@
   .completeHomePage{
     border: 1px solid #edeef0;
     background-image:url("/background2.jpg");
+  }
+
+  .main_page_flex{
+    display: flex;
+    flex-direction: column;
   }
 
   /* .overlay{

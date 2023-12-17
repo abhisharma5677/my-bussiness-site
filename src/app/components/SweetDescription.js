@@ -1,27 +1,44 @@
 import sweets from "../components/sweetObject"
-import SweetCard from "./SweetCard"
+import SweetCardOne from "./SweetCardOne"
+import SweetCardTwo from "./SweetCardTwo"
 import style from "@/app/styles/sweets.module.css"
 
 const SweetDescription = () => {
   return (
     <div>
       <div>
-        <h1 className={style.sweet_msg}>About Sweets</h1>
+        <h1 className={style.sweet_msg}>Dessert Insights</h1>
       </div>
       <div className={style.borderSweets}>
-        <div className={style.sweetCard_flex}>
-          {sweets.map((item, i) => {
+        {sweets.map((item, i) => {
+          if (i % 2 === 0) {
             return (
-              <SweetCard key={i}
-                img1={sweets[i].Img1}
-                img2={sweets[i].Img2}
-                img3={sweets[i].Img3}
-                img4={sweets[i].Img4}
-                name={sweets[i].name}
-                description={sweets[i].meaning} />
+              <div key={i} className={style.sweetCard_flex1}>
+                <SweetCardOne
+                  img1={sweets[i].Img1}
+                  img2={sweets[i].Img2}
+                  img3={sweets[i].Img3}
+                  img4={sweets[i].Img4}
+                  name={sweets[i].name}
+                  description={sweets[i].meaning}
+                 />
+              </div>
             )
-          })}
-        </div>
+          }
+          else {
+            return (
+              <div key={i} className={style.sweetCard_flex2}>
+                <SweetCardTwo
+                  img1={sweets[i].Img1}
+                  img2={sweets[i].Img2}
+                  img3={sweets[i].Img3}
+                  img4={sweets[i].Img4}
+                  name={sweets[i].name}
+                  description={sweets[i].meaning} />
+              </div>
+            )
+          }
+        })}
       </div>
     </div>
   )

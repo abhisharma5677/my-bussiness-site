@@ -1,13 +1,19 @@
 import React, { Suspense } from 'react'
 import GetPhoto from '../components/GetPhoto'
+import UpdatePageMsg from '../components/UpdatePageMsg'
 import Loading from '../loading'
 
 
 const page = () => {
   return (
-    <div>
+    <div className="update_page_flex">
       <Suspense fallback={<Loading />}>
-        <GetPhoto />
+        <div className="update_page_msg">
+          <UpdatePageMsg />
+        </div>
+        <div className="update_page_photos">
+          <GetPhoto />
+        </div>
       </Suspense>
     </div>
   )

@@ -24,10 +24,10 @@ const ContactForm = () => {
     <div className={style.bigFormContainer}>
 
       <div className={style.form_description}>
-        <h1><u>Contact Form</u></h1>
+        <h1><u>CONTACT US</u></h1>
       </div>
 
-
+      
       <div className={style.form_container}>
         <form ref={form} onSubmit={sendEmail}>
           <div className={style.form_group}>

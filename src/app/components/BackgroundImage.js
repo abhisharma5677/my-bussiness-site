@@ -3,7 +3,7 @@ import style from '@/app/styles/homePage.module.css'
 
 const BackgroundImage = () => {
   return (
-    <div className={style.overlay}>
+    <div>
       <div className={style.backgroundImage}>
         <div>
           <h1>OVER 50 YEARS EXPERIENCE</h1>

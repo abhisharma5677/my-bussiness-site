@@ -4,6 +4,7 @@ import sweets from "../components/sweetObject"
 // import HomePageContactInfo from "./HomePageContactInfo"
 import QualityAssurance from "./QualityAssurance"
 import BackgroundImage from "./BackgroundImage"
+import Image from "next/image"
 import Link from "next/link"
 import { FaWhatsappSquare } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
@@ -27,19 +28,151 @@ const HomePageSweets = () => {
       </div>
 
 
+
+
       {/* Home Page Sweets Code */}
       <div>
         <div className={style.homeImagesContainer}>
-          <HomeSweetCard img={sweets[0].Img6} />
-          <HomeSweetCard img={sweets[1].Img6} />
-          <HomeSweetCard img={sweets[2].Img6} />
-          <HomeSweetCard img={sweets[3].Img6} />
-          <HomeSweetCard img={sweets[4].Img6} />
-          <HomeSweetCard img={sweets[5].Img6} />
-          <HomeSweetCard img={sweets[6].Img6} />
-          <HomeSweetCard img={sweets[7].Img6} />
+          {/* MILK CAKE */}
+          <div className={style.container}>
+            <HomeSweetCard img={sweets[1].Img6} />
+            <div className={style.overlay}>
+              <div className={style.text}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Image src="/LOGO.png" alt="logo_image" loading="lazy" height={100} width={100} className={style.logoHover} />
+                </div>
+                <p style={{ fontWeight: "bolder" }}><u>MILK CAKE</u></p>
+                <p>Indian Milk Cake is a traditional Indian milk...
+                  <Link href="/sweets" className={style.linkHover}>
+                    read more
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* PEDE */}
+          <div className={style.container}>
+            <HomeSweetCard img={sweets[0].Img6} />
+            <div className={style.overlay}>
+              <div className={style.text}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Image src="/LOGO.png" alt="logo_image" loading="lazy" height={100} width={100} className={style.logoHover} />
+                </div>
+                <p style={{ fontWeight: "bolder" }}><u>PEDE</u></p>
+                <p>Pera is a mithai from the Indian subcontinent...
+                  <Link href="/sweets" className={style.linkHover}>
+                    read more
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* KAJU KATLI */}
+          <div className={style.container}>
+            <HomeSweetCard img={sweets[2].Img6} />
+            <div className={style.overlay}>
+              <div className={style.text}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Image src="/LOGO.png" alt="logo_image" loading="lazy" height={100} width={100} className={style.logoHover} />
+                </div>
+                <p style={{ fontWeight: "bolder" }}><u>KAJU KATLI</u></p>
+                <p>Kaju Katli is a delicious traditional North Indian sweet...
+                  <Link href="/sweets" className={style.linkHover}>
+                    read more
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* BARFI */}
+          <div className={style.container}>
+            <HomeSweetCard img={sweets[3].Img6} />
+            <div className={style.overlay}>
+              <div className={style.text}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Image src="/LOGO.png" alt="logo_image" loading="lazy" height={100} width={100} className={style.logoHover} />
+                </div>
+                <p style={{ fontWeight: "bolder" }}><u>BARFI</u></p>
+                <p>Burfi is a popular Indian milk based sweet recipe...
+                  <Link href="/sweets" className={style.linkHover}>
+                    read more
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* BOONDI LADDOO */}
+          <div className={style.container}>
+            <HomeSweetCard img={sweets[4].Img6} />
+            <div className={style.overlay}>
+              <div className={style.text}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Image src="/LOGO.png" alt="logo_image" loading="lazy" height={100} width={100} className={style.logoHover} />
+                </div>
+                <p style={{ fontWeight: "bolder" }}><u>BOONDI LADDOO</u></p>
+                <p>Laddu or laddoo is a spherical sweet from the Indian...
+                  <Link href="/sweets" className={style.linkHover}>
+                    read more
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* GAJAR KA HALWA */}
+          <div className={style.container}>
+            <HomeSweetCard img={sweets[5].Img6} />
+            <div className={style.overlay}>
+              <div className={style.text}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Image src="/LOGO.png" alt="logo_image" loading="lazy" height={100} width={100} className={style.logoHover} />
+                </div>
+                <p style={{ fontWeight: "bolder" }}><u>GAJAR KA HALWA</u></p>
+                <p>Gajar ka halwa, also known as gajorer halua...
+                  <Link href="/sweets" className={style.linkHover}>
+                    read more
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* SOAN PAPDI */}
+          <div className={style.container}>
+            <HomeSweetCard img={sweets[6].Img6} />
+            <div className={style.overlay}>
+              <div className={style.text}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Image src="/LOGO.png" alt="logo_image" loading="lazy" height={100} width={100} className={style.logoHover} />
+                </div>
+                <p style={{ fontWeight: "bolder" }}><u>SOAN PAPDI</u></p>
+                <p>It is a wonderful Indian dessert...
+                  <Link href="/sweets" className={style.linkHover}>
+                    read more
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* MEWA BAATI */}
+          <div className={style.container}>
+            <HomeSweetCard img={sweets[7].Img6} />
+            <div className={style.overlay}>
+              <div className={style.text}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Image src="/LOGO.png" alt="logo_image" loading="lazy" height={100} width={100} className={style.logoHover} />
+                </div>
+                <p style={{ fontWeight: "bolder" }}><u>MEWA BATI</u></p>
+                <p>Mawa bati is a popular dessert from Madhya Pradesh...
+                  <Link href="/sweets" className={style.linkHover}>
+                    read more
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+
 
 
       {/* Home Page FSSAI Code */}

@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import style from "@/app/styles/AboutUs.module.css"
 
 const page = () => {
   return (
-    <div style={{display:"flex",justifyContent:"center"}}>
-      <div className='about_us'>
-        <Image src="/LOGO.png" alt='logo' height={200} width={200} className='about_us_logo' />
-        <div className='about_us_content'><b>Pandit Misthan Bhandar</b>,
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div className={style.about_us}>
+        <Image src="/LOGO.png" alt='logo' height={200} width={200} className={style.about_us_logo} />
+        <div className={style.about_us_content}><b>Pandit Misthan Bhandar</b>,
           the leading sweet house of <b>Hardaspur Aonla, Bareilly</b> was
           established in 1969 by Late Shri Bhola Nath ji with the motive of
           serving the customers of Bareilly with premium quality sweets and

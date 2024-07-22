@@ -1,4 +1,4 @@
-import HomePageSweets from "./components/HomePageSweets"
+import HomePageSweets from "./components/04HomePageSweets"
 
 const page = () => {
   return (

@@ -2,9 +2,9 @@
 
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Header from './components/Header'
-import AboutAnimation from './components/AboutAnimation'
-import Footer from './components/Footer'
+import Header from './components/03Header'
+// import AboutAnimation from './components/02AboutAnimation'
+import Footer from './components/08Footer'
 // import Head from 'next/head';
 import Script from 'next/script'
 import AmountContextProvider from './context/AmountContextProvider'
@@ -32,8 +32,8 @@ export default function RootLayout({ children }) {
           <LoginContextProvider>
             <AmountContextProvider>
               <ToastContainer />
-              <AboutAnimation />
               <Header />
+              {/* <AboutAnimation /> */}
               <Suspense fallback={<Loading />}>
                 {children}
               </Suspense>

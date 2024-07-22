@@ -1,4 +1,4 @@
-import { connectDb } from "@/helper/dbConnection";
+import { connectDb } from "@/config/dbConnection";
 import { NextResponse } from "next/server";
 import { Photo } from "@/models/photoSchema";
 
@@ -21,7 +21,7 @@ export async function POST(request){
 
         const createPhoto = await newPhoto.save();
 
-        console.log("Post API called succesfully...");
+        // console.log("Post API called succesfully...");
 
         return NextResponse.json({
             status:201,
@@ -30,7 +30,7 @@ export async function POST(request){
         })
 
     }catch(error){
-        console.log(error);
+        // console.log(error);
 
         return NextResponse.json({
             message:"failed to create photo...",
@@ -54,11 +54,11 @@ export async function GET(request){
             status:201,
             success:true,
         }) 
-        console.log("Get API called successfully.....")
+        // console.log("Get API called successfully.....")
 
     }catch(error){
 
-        console.log(error);
+        // console.log(error);
         return NextResponse.json({
             message:"Error in get request !!",
             success:false,

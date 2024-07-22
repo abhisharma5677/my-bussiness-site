@@ -141,3 +141,142 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Change password functionality...... */
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 35%;
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 5px;
+    max-width: 450px;
+}
+
+.form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.heading2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.input_group {
+    margin-bottom: 1rem;
+}
+
+.labelClass {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit_button {
+    text-align: center;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+@media(max-width:700px){
+
+    .container {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        min-height: 35%;
+        background-color: white;
+        margin: 100px auto;
+        border-radius: 5px;
+        width: 90%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Logout Button functionality */
+
+.LogoutButton{
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* padding: 10px; */
+    font-size: 16px;
+}
+
+.LogoutButton:hover{
+    color: yellow;
+}

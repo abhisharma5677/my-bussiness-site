@@ -1,6 +1,6 @@
-.pre_container{
+.pre_container {
     border: 1px solid rgb(215, 155, 82);
-    background-color: rgb(215, 155, 82);
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -12,9 +12,9 @@
     top: 0; */
 }
 
-.serving_msg{
+.serving_msg {
     font-style: italic;
-    color: aliceblue;
+    color: rgb(113, 112, 112);
 }
 
 .message_container {
@@ -23,7 +23,7 @@
     overflow: hidden;
     position: relative;
     padding-top: 17px;
-    color:aliceblue;
+    color: rgb(113, 112, 112);
 }
 
 .message {
@@ -35,49 +35,68 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    animation: changeMessage 20s infinite;
+    animation: messageAnimation 25s infinite;
 }
 
 .message:nth-child(1) {
-    animation-delay: 5s;
+    animation-delay: 0s;
 }
 
 .message:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.message:nth-child(3) {
     animation-delay: 10s;
 }
 
-@keyframes changeMessage {
+.message:nth-child(4) {
+    animation-delay: 15s;
+}
 
-    0%,
-    40%,
-    60%,
-    100% {
+.message:nth-child(5) {
+    animation-delay: 20s;
+}
+
+@keyframes messageAnimation {
+    0% {
         opacity: 0;
     }
 
-    20%,
-    80% {
+    5% {
         opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
 
-@media (max-width:700px){
+@media (max-width:700px) {
 
-    .pre_container{
+    .pre_container {
         border: 1px solid rgb(215, 155, 82);
-        background-color: rgb(215, 155, 82);
+        background-color: whitesmoke;
         display: flex;
         flex-direction: column;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         align-items: center;
         align-self: center;
         padding-top: 5px;
     }
 
-    .serving_msg{
-        font-size:x-large;
-        font-weight:900;
+    .serving_msg {
+        font-size: x-large;
+        font-weight: 900;
         padding-top: 10px;
     }
 
@@ -87,6 +106,6 @@
         overflow: hidden;
         position: relative;
         padding-top: 10px;
-        color:aliceblue;
+        color: rgb(113, 112, 112);
     }
 }

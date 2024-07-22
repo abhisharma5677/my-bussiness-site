@@ -1,4 +1,4 @@
-import SweetDescription from '../components/SweetDescription'
+import SweetDescription from '../components/14SweetDescription'
 
 const page = () => {
   return (

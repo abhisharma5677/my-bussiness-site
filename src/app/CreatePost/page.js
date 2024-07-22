@@ -1,5 +1,6 @@
 import React from 'react'
-import UploadPhotos from '../components/UploadPhotos'
+import UploadPhotos from '../components/12_1_UploadPhotos'
+
 
 const page = () => {
   return (

@@ -1,5 +1,5 @@
-import ContactCard from "../components/ContactCard"
-import ContactForm from "../components/ContactForm"
+import ContactCard from "../components/18ContactCard"
+import ContactForm from "../components/19ContactForm"
 import style from "@/app/styles/contact.module.css"
 
 const page = () => {

@@ -1,0 +1,44 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background: rgba(0, 136, 255, 0.66);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 136, 255, 0.66);
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1001; /* Ensure the sidebar is above the overlay */
+}
+
+.closeIcon {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}

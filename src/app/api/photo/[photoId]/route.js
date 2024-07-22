@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import {Photo} from "@/models/photoSchema";
-import {connectDb} from "@/helper/dbConnection";
+import {connectDb} from "@/config/dbConnection";
 
 //Connect to the database...
 connectDb();

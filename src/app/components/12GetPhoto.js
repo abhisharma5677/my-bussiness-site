@@ -75,10 +75,10 @@ const GetPhoto = () => {
           <div className={style.photo_and_message}>
             <div className={style.date_and_delete}>
               {/* {login && ( // Conditionally render delete button if user is logged in */}
-                <AiFillDelete
+                {/* <AiFillDelete
                   className={style.delete_icon}
                   onClick={() => handleDelete(element._id)}
-                />
+                /> */}
               {/* )} */}
             </div>
             {element.myFile && (

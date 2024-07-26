@@ -27,10 +27,9 @@ const Header = () => {
                     <li><Link href="/sweets">SWEETS</Link></li>
                     <li><Link href="/cart">CART</Link></li>
                     <li><Link href="/contact">CONTACT US</Link></li>
-                    <li><Link href="https://pandit-misthan-bhandar.business.site/">REVIEWS AND RATINGS</Link></li>
+                    <li><Link href="https://www.justdial.com/Bareilly/Pandit-Misthan-Bhandar-Hardaspur/9999PX581-X581-170826000502-K7N1_BZDET">REVIEWS AND RATINGS</Link></li>
                     <li><Link href="/LoginPage">LOGIN</Link></li>
                     <li><Link href="/ChangePassword">CHANGE PASSWORD</Link></li>
-                    <li><Link href="/CreatePost">CREATE POST</Link></li>
                     <li><Link href="/SignUpPage">SIGN UP</Link></li>
                     <li><LogoutButton /></li>
                 </ul>

@@ -44,7 +44,7 @@ const FooterLink = () => {
                         </Link>
                     </li>
                     <li className={style.listItem_class}>
-                        <Link href="https://pandit-misthan-bhandar.business.site/" className={style.listItem_class}>
+                        <Link href="https://www.justdial.com/Bareilly/Pandit-Misthan-Bhandar-Hardaspur/9999PX581-X581-170826000502-K7N1_BZDET" className={style.listItem_class}>
                             REVIEWS AND RATINGS
                         </Link>
                     </li>
@@ -56,11 +56,6 @@ const FooterLink = () => {
                     <li className={style.listItem_class}>
                         <Link href="/ChangePassword" className={style.listItem_class}>
                             CHANGE PASSWORD
-                        </Link>
-                    </li>
-                    <li className={style.listItem_class}>
-                        <Link href="/CreatePost" className={style.listItem_class}>
-                            CREATE POST
                         </Link>
                     </li>
                     <li className={style.listItem_class}>

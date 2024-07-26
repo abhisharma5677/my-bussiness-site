@@ -61,7 +61,7 @@ const Page = ({ params }) => {
             if (response.data.Success) {
                 
                 //toast message for successfully login...
-                toast.success("User Login Succesfull...", {
+                toast.success("Succesfully Added to CART", {
                     position: "top-center"
                 })
 

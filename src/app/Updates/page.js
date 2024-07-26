@@ -3,7 +3,7 @@ import GetPhoto from '../components/12GetPhoto'
 import UpdatePageMsg from '../components/13UpdatePageMsg'
 import Loading from '../loading'
 import style from "@/app/styles/getPhoto.module.css"
-
+// const GetPhoto = React.lazy(() => import('@/app/components/12GetPhoto')); // Lazy load your component
 
 
 

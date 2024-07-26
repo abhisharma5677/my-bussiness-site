@@ -1,11 +1,14 @@
-import React from 'react'
+import React , {Suspense} from 'react'
 import SignUp from '../components/21SignUp'
+import Loading from '../loading';
+// const SignUp = React.lazy(() => import('@/app/components/21SignUp'));
+
 
 const page = () => {
   return (
-    <div>
+    <Suspense fallback={<Loading />}>
         <SignUp />
-    </div>
+    </Suspense>
   )
 }
 

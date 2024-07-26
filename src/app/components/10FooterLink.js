@@ -10,7 +10,7 @@ const FooterLink = () => {
 
     return (
         <div>
-            <h3 style={{ textDecoration: "underline", color: "grey" }}>Quick Links</h3>
+            <h3 style={{ textDecoration: "underline", color: "grey",fontFamily:"'Times New Roman', Times, serif" }}>Quick Links</h3>
             <div>
                 <ul className={style.quickLink_class}>
                     <li>
@@ -24,7 +24,7 @@ const FooterLink = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/fromOwnersDesk" className={style.listItem_class}>
+                        <Link href="/about" className={style.listItem_class}>
                             ABOUT US
                         </Link>
                     </li>

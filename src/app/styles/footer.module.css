@@ -18,6 +18,10 @@
     padding-left: 5px;
 }
 
+.quickLink_class li a{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .linkIcon_class {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -26,6 +30,7 @@
 
 .listItem_class {
     color: grey;
+    font-weight: bolder;
 }
 
 .listItem_class:hover {
@@ -34,9 +39,10 @@
     font-weight: bolder;
 }
 
-.footer_msg {
+.footer_msg{
     color: gray;
     padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .logo{
@@ -49,7 +55,7 @@
 @media(max-width:700px) {
 
     .footer_container {
-        border: 1px solid grey;
+        border: 1px solid whitesmoke;
         /* background-color: #544d3b; */
         background-color: whitesmoke;
         display: flex;
@@ -76,11 +82,12 @@
     .listItem_class{
         font-size: 13px;
         font-weight: bolder;
+        color: grey;
     }
 
     .quickLink_class {
         list-style-type: none;
-        line-height: 40px;
+        line-height: 35px;
         margin-bottom: 30px;
         padding-left: 5px;
     }

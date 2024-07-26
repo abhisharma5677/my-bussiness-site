@@ -84,6 +84,11 @@
   color: white;
 }
 
+.text p a{
+  font-family:'Times New Roman', Times, serif;
+  color: white;
+}
+
 .linkHover{
   font-family:'Times New Roman', Times, serif;
   color: white;

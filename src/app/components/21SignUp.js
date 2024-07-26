@@ -79,9 +79,8 @@ const SignUp = () => {
 
 
                 // Navigation
-                router.push('/cart');
+                // router.push('/cart');
             }
-
         }
 
         catch (error) {

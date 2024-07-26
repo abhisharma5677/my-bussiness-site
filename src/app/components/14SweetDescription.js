@@ -6,9 +6,9 @@ import style from "@/app/styles/sweets.module.css"
 const SweetDescription = () => {
   return (
     <div>
-      <div>
+      {/* <div>
         <h1 className={style.sweet_msg}>Dessert Insights</h1>
-      </div>
+      </div> */}
       <div className={style.borderSweets}>
         {sweets.map((item, i) => {
           if (i % 2 === 0) {

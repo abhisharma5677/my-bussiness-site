@@ -5,7 +5,7 @@ import style from "@/app/styles/contact.module.css"
 const page = () => {
   return (
     <div>
-      <h1 className={style.contactUs_msg}>CONTACT US</h1>
+      {/* <h1 className={style.contactUs_msg}>CONTACT US</h1> */}
       <ContactCard />
 
       <ContactForm />
